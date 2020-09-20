@@ -1,0 +1,19 @@
+{
+  "name": "acat",
+  "version": "1.0.0",
+  "description": "官网重构合作项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inory-tpf/ACAT.git"
+  },
+  "author": "yff&&tpf&&yj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inory-tpf/ACAT/issues"
+  },
+  "homepage": "https://github.com/inory-tpf/ACAT#readme"
+}
