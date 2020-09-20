@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-   yff i are coming
+   yff i am coming
   </div>
 </template>
 
