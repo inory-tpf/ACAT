@@ -2,7 +2,8 @@
 export default[
     {
       path: '/',
-      name: 'HelloWorld',
-      component:  () => import ('../components/computer/1MainPage/HelloWorld.vue'),
-    }
+      name: 'page',
+      component:  () => import ('../components/computer/1MainPage/page.vue'),
+    },
+ 
 ]
