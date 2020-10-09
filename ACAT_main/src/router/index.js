@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import index2 from './computer'
 
 Vue.use(Router)
+var res = window.innerWidth  
+var routes = []
+if(res < 786){
+  
+}else{
+  routes = index2
+}
+  
+
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  mode:'history',
+  routes
 })
