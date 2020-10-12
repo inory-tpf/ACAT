@@ -18,7 +18,7 @@ export default {
 .mespage{
     width: 100%;
     height: 120%;
-    background-color: skyblue;
+    background-color:rgb(60,66,78);
     transform: rotateZ(-80deg);
     margin-left: 55%;
     box-shadow: 0 0 15px rgb(0, 0, 0,.27);

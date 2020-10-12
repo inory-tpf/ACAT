@@ -35,20 +35,19 @@ export default {
         float: left;
         width: 2%;
         height: 80%;
-        background-color:rgb(60,66,78,.7);
         padding: 0;
         margin-top: 40%;
         margin-left: 18vw;
     }
     .item,.item1{
         list-style: none;
-        width: 1.3vw;
-        height: 1.3vw;
+        width: .5vw;
+        height: .5vw;
         margin-top: 1.5vw;
         border-radius: 50%;
         margin-left: -.8vw;
         background-color:rgb(235, 238, 238);
-        border: .35vw solid rgb(60,66,78,.7);
+        border: .15vw solid rgb(60,66,78,.7);
     }
     .item1{
         margin-top: 25vh;

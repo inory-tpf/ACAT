@@ -43,19 +43,20 @@ export default {
 .main{
     position: absolute;
     width: 100%;
-    height: 6vw;
+    height: 5vw;
 }
 .nav{
     position: relative;
     width: 100%;
-    height: 6vw;
+    height: 5vw;
     z-index: 999;
-    background-color: rgb(0, 0, 0,.6);
+    background-color:rgb(60,66,78,.9);
+    box-shadow: 0 0 15px rgb(60,66,78,.8);
 }
 .logo{
     width: 13%;
     height: 4vw;
-    margin-top: 1vw;
+    margin-top: .5vw;
     margin-left: 1%;
     float: left;
     background-image: url("../../../assets/logo/acatw.png");
@@ -66,7 +67,7 @@ export default {
     float: left;
     width: 70vw;
     height: 4vw;
-    margin-top: 1vw;
+    margin-top: .5vw;
 }   
 .item{
     float: left;

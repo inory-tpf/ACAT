@@ -23,6 +23,6 @@ export default {
         font-size: 2vw;
         font-weight: 600;
         line-height: 5vw;
-        margin-top: 23vw;
+        margin-top: 23vw; 
     }
 </style>

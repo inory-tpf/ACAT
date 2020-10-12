@@ -15,6 +15,7 @@
 <script>
 import nav2 from "../public/nav_2";
 import lists from "./lists"
+import before from "./before"
 export default {
   data() {
     return {
@@ -44,6 +45,7 @@ export default {
   components: {
     nav2,
     lists,
+    before,
   },
   watch:{
       "opts.page":{
