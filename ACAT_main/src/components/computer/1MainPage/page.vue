@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="pic"></div>
+    <div class="pic" ref="scroll"></div>
     <div class="part1">
       <Mynav></Mynav>
     </div>
@@ -29,12 +29,25 @@ export default {
       
     }
   },
+  methods:{
+    picscroll(){
+      console.log("wow")
+      this.$refs.scroll.style.marginTop = -window.pageYOffset * 0.1 + 'px'
+      console.log(this.$refs.scroll.style.marginTop)
+      console.log(window.pageYOffset * 0.5)
+    }
+  },
   components:{
     Mynav,
     Shicha,
     Picwall,
     Acatmap,
-  }
+  },
+  mounted(){
+    window.onload = () => {
+      window.addEventListener('scroll', this.picscroll)
+    }
+  },
 }
 </script>
 
@@ -52,9 +65,7 @@ export default {
   }
   .part2{
     width: 100%;
-    height: 30vw;
-    
-
+    height: 27vw;
   }
   .part3{
     width: 100%;

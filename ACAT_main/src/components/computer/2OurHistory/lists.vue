@@ -26,6 +26,7 @@ export default {
 </script>
 <style scoped>
     .main{
+        position: absolute;
         width: 20%;
         height: 100%;
         right: 0%;

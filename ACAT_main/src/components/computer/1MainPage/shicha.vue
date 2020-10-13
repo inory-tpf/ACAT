@@ -18,7 +18,7 @@ export default {
     .fonts{
         width: 40%;
         height: 5vw;
-        background-color: rgb(0, 0, 0,.4);
+        background-color:  rgb(60, 66, 78,.9);
         color: rgb(255, 255, 255,.8);
         font-size: 2vw;
         font-weight: 600;

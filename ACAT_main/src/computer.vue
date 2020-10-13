@@ -18,4 +18,16 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+::selection{
+  background-color:rgb(86,158,142,.9);
+  color:#000;
+}
+::-webkit-selection{
+  background-color:rgb(86,158,142,.9);
+  color:#000;
+}
+::-moz-selection{
+  background-color:rgb(86,158,142,.9);
+  color:#000;
+}
 </style>

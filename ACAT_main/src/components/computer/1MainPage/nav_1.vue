@@ -107,24 +107,24 @@ export default {
     margin-left: 27vw;
     margin-top: 8vw;
     z-index: 999;
-    display: none;
 }
 .font1{
     width: 35vw;
     height: 7vw;
-    background-color: rgb(94,177,160,.8);
+  background-color: rgb(95, 177, 159,.9);
     margin: 0 auto;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
     color: rgb(255, 255, 255,.9);
     font-weight: 600;
     line-height: 7vw;
     margin-top: 8vw;
+    letter-spacing: .2vw;
 }
 .font2{
     width: 33vw;
     height: 4vw;
     margin: 0 auto;
-    background-color: rgb(0, 0,0,.4);
+    background-color: rgb(0, 0,0,.6);
     color: rgb(255, 255, 255,.9);
     line-height: 4vw;
     margin-top: 1.6vw;
