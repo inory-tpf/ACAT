@@ -78,7 +78,7 @@ export default {
             this.$refs.line1.style.transform = "rotateZ(0deg)";
             this.$refs.line2.style.transform = "rotateZ(0deg)";
             this.$refs.line3.style.transform = "rotateZ(0deg)";
-            this.$refs.lists.style.cssText += ";opacity: 0;margin-top: -25vw;";
+            this.$refs.lists.style.cssText += ";opacity: 0;margin-top: -30vw;";
             this.line = true;
         },
         moveto(value) {
@@ -89,9 +89,13 @@ export default {
             this.$refs.line1.style.transform = "rotateZ(0deg)";
             this.$refs.line2.style.transform = "rotateZ(0deg)";
             this.$refs.line3.style.transform = "rotateZ(0deg)";
-            this.$refs.lists.style.cssText += ";opacity: 0;margin-top: -25vw;";
+            this.$refs.lists.style.cssText += ";opacity: 0;margin-top: -30vw;";
             this.line = true;
         },
+        changenowpage(value){
+            this.nowpage = this.pages[value-1]
+            this.msg.value = value
+        }, 
     },
 };
 </script>

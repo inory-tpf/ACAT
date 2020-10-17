@@ -2,7 +2,7 @@
     <div class="main">
         <nav_2></nav_2>
         <div class="pages">
-            <lineNav @msg="moveto"></lineNav>
+            <lineNav @msg="moveto" ref="linenav"></lineNav>
             <div class="page" :id="5" ref="id5">
                 <jqxx ref="move4"></jqxx>
             </div>
@@ -15,7 +15,7 @@
             <div class="page" :id="2" ref="id2">
                 <Qd ref="move1"></Qd>
             </div>
-            <div class="page page1" :id="1" ref="id1">1</div>
+            <div class="page page1" :id="1" ref="id1"><why @pagevalue = "moveto2"></why></div>
         </div>
     </div>
 </template>
@@ -26,7 +26,7 @@ import Qd from "./qd";
 import fwd from "./fwd";
 import ht from "./ht";
 import jqxx from "./jqxx";
-
+import why from "./why"
 export default {
     data() {
         return {
@@ -42,12 +42,18 @@ export default {
         fwd,
         ht,
         jqxx,
+        why,
     },
     methods: {
         moveto(msg) {
             this.pre = msg.pre;
             this.id = msg.value;
         },
+        moveto2(value){
+            this.pre = 1;
+            this.id = value
+            this.$refs.linenav.changenowpage(value)
+        }
     },
     watch: {
         id(value) {

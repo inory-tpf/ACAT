@@ -10,7 +10,9 @@
         <div class="page color">
           <history></history>
         </div>
-        <div class="page color"></div>
+        <div class="page color">
+          <achieve></achieve>
+        </div>
         <div class="page color"></div>
         <div class="page color"></div>
       </div>
@@ -20,7 +22,7 @@
 <script>
 import nav2 from "../public/nav_2";
 import lists from "./lists";
-import before from "./before";
+import achieve from "./achieve";
 import history from './history'
 export default {
   data() {
@@ -51,14 +53,13 @@ export default {
   components: {
     nav2,
     lists,
-    before,
     history,
+    achieve,
   },
   watch: {
     "opts.page": {
       handler: function () {
         this.page = this.opts.page;
-        console.log(this.page);
       },
       deep: true,
       immediate: true,
