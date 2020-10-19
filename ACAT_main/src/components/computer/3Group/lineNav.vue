@@ -140,7 +140,7 @@ export default {
     margin-left: 1vw;
     transition: 0.6s ease-in-out;
     opacity: 0;
-    margin-top: -25vw;
+    margin-top: -30vw;
     padding: 0;
 }
 .listFont {

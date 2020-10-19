@@ -1,7 +1,15 @@
 <template>
     <div class="main">
+        <div class="biaoqian">
+            <div class="back">
+                <div class="item">照片墙</div>
+            </div>
+        </div>
         <div class="frame">
-            <div class="fontsPlace"></div>
+            <div class="fontsPlace">
+                <div class="font1">这里是文字</div>
+                <div class="font2">这里还是文字</div>
+            </div>
             <ul class="picPlace">
                 <li class="pic1">1</li>
                 <li class="pic2">2</li>
@@ -13,98 +21,104 @@
                 <li class="pic8">8</li>
                 <li class="pic9">9</li>
                 <li class="pic10">10</li>
-                <div class="mengban"></div>
+                <!-- <div class="mengban"></div> -->
             </ul>
         </div>
     </div>
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
 <style scoped>
-.main{
-
+.main {
     width: 100%;
     height: 100%;
 }
-.frame{
+.frame {
     overflow: hidden;
     width: 100%;
     height: 40vw;
-    margin-top: 5vw;
-    box-shadow: 0 0 15px rgb(0, 0, 0,.4);
+    margin-top: 1vw;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
 }
-.fontsPlace{
+.fontsPlace {
     float: left;
     width: 30%;
     height: 100%;
-    background-color:rgb(60,66,78);
-}   
-.picPlace{
+    background-color: rgb(60, 66, 78);
+}
+.picPlace {
     float: left;
     width: 70%;
     height: 100%;
-    background-color:rgb(60,66,78);
+    background-color: rgb(60, 66, 78);
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
-.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.pic9,.pic10{
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7,
+.pic8,
+.pic9,
+.pic10 {
     float: left;
     width: 20%;
     height: 20%;
     background-color: skyblue;
     list-style: none;
     margin-left: 1%;
-    margin-top: .5vw;
-    box-shadow: 3px 3px 9px rgb(0, 0, 0,.6);
+    margin-top: 0.5vw;
+    box-shadow: 3px 3px 9px rgb(0, 0, 0, 0.6);
 }
-.pic1{
+.pic1 {
     height: 45%;
     background-image: url("../../../assets/IMG_20190421_123546.jpg");
     background-size: 100% auto;
 }
-.pic6{
+.pic6 {
     height: 45%;
     margin-top: -13.7%;
     background-image: url("../../../assets/IMG_20190421_135405.jpg");
     background-size: auto 100%;
 }
-.pic4{
+.pic4 {
     width: 15%;
     height: 45%;
     background-image: url("../../../assets/IMG_20191020_205855.jpg");
     background-size: auto 100%;
 }
-.pic3{
+.pic3 {
     width: 40%;
     height: 45%;
     background-image: url("../../../assets/IMG_20191028_195020.jpg");
     background-size: 100% auto;
 }
-.pic7{
+.pic7 {
     width: 15%;
     height: 51.1%;
     background-image: url("../../../assets/IMG_20191214_204942.jpg");
     background-size: auto 100%;
 }
-.pic8{
+.pic8 {
     width: 40%;
     height: 25%;
     background-image: url("../../../assets/IMG_20191214_213313.jpg");
     background-size: 100% auto;
     background-position: 0 30%;
 }
-.pic9{
+.pic9 {
     width: 40%;
     height: 25%;
     background-image: url("../../../assets/wx_camera_1572790631800.jpg");
     background-size: 100% auto;
     background-position: 0 50%;
 }
-.pic10{
+.pic10 {
     width: 41%;
     height: 29.7%;
     margin-top: -17.3%;
@@ -112,28 +126,69 @@ export default {
     background-size: 100% auto;
     background-position: 0 20%;
 }
-.pic5{
+.pic5 {
     background-image: url("../../../assets/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
     background-size: 100% auto;
     background-position: 0 50%;
 }
-.pic2{
+.pic2 {
     background-image: url("../../../assets/shicha/QQ图片20201010174541.jpg");
     background-size: 100% auto;
     background-position: 0 40%;
 }
 @keyframes group1 {
-    from{
+    from {
         transform: rotateX(0deg);
     }
-    to{
+    to {
         transform: rotateX(180deg);
     }
 }
-.mengban{
+.mengban {
     position: absolute;
     width: 70%;
     height: 40vw;
-    background-color: rgb(0, 0, 0,.2);
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.biaoqian {
+  position: relative;
+  width: 100%;
+  height: 8vw;
+}
+.back {
+  position: absolute;
+  width: 15vw;
+  height: 3vw;
+  background-color: rgb(60, 66, 78);
+  bottom: 2vw;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+  left: 50%;
+  margin-left: -7.5vw;
+}
+.item {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(95, 177, 159);
+  margin-left: 1vw;
+  margin-top: 1vw;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 3vw;
+  letter-spacing: 0.3vw;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+}
+.font1,.font2{
+    float: left;
+    width: 4vw;
+    height: 20vw;
+    font-size: 2.6vw;
+    font-weight: 600;
+    color:rgb(255,255,255,.8);
+    margin-left: 8vw;
+    margin-top: 8vw;
+}
+.font2{
+    margin-left: 2vw;
 }
 </style>

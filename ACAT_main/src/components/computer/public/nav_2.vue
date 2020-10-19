@@ -43,7 +43,7 @@ export default {
 .main{
     position: absolute;
     width: 100%;
-    height: 5vw;
+    height:5vw;
 }
 .nav{
     position: relative;

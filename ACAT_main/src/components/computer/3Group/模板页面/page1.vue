@@ -1,18 +1,25 @@
 <template>
   <div class="main">
       <div class="picbox">
-        <div class="pic"></div>
+        <div  class="pic">
+          <img :src="msg.pic1" />
+        </div>
       </div>
       <div class="fonts">
-        <div class="bigfonts">前端是什么</div>
-        <div class="smallfonts">这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</div>
+        <div class="bigfonts">{{msg.title1}}是什么</div>
+        <div class="smallfonts">{{msg.font1}}</div>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      
+    }
+  },
+  props:['msg']
 }
 </script>
 
@@ -34,12 +41,14 @@ export default {
   .pic{
     width: 100%;
     height: 100%;
-    background-image: url("../../../../assets/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
-    background-size: 100% auto;
-    background-position: 0 40%;
     margin-left: 1.5vw;
     margin-top: 1.5vw;
     box-shadow: 0 0 10px rgb(22, 22, 22, 0.8);
+    overflow: hidden;;
+  }
+  img{
+    width: 100%;
+    height: auto;
   }
   .fonts{
     width: 40vw;

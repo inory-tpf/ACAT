@@ -128,7 +128,7 @@ export default {
     width: 120vw;
     height: 100%;
     margin-left: -10vw;
-    background-image: url("../../../assets/浪.png");
+    background-image: url("../../../assets/icon/浪.png");
     background-size: 100% 100%;
     animation: mian1 10s ease-in-out infinite;
     opacity: 0.7;

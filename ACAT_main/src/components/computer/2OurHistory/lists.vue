@@ -4,7 +4,6 @@
                 <li @click="moveto(0)" class="item1" :class="{'active':page==0}"></li>
                 <li class="item" @click="moveto(1)" :class="{'active':page==1}"></li>
                 <li class="item" @click="moveto(2)" :class="{'active':page==2}"></li>
-                <li class="item" @click="moveto(3)" :class="{'active':page==3}"></li>
             </ul>    
     </div>    
 </template>

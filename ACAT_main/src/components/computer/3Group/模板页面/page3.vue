@@ -1,8 +1,8 @@
 <template>
   <div class="main">
       <div class="fonts">
-        <div class="bigfonts">前端的发展前景</div>
-        <div class="smallfonts">这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字</div>
+        <div class="bigfonts">{{msg.title1}}的发展前景</div>
+        <div class="smallfonts">{{msg.font3}}</div>
       </div>
       <div class="join">Join Us</div>
       <div class="loop"></div>
@@ -11,7 +11,12 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      
+    }
+  },
+  props:['msg']
 }
 </script>
 

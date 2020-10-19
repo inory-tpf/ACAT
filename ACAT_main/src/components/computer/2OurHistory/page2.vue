@@ -14,7 +14,6 @@
           <achieve></achieve>
         </div>
         <div class="page color"></div>
-        <div class="page color"></div>
       </div>
     </div>
   </div>
@@ -30,7 +29,7 @@ export default {
       opts: {
         start: 0,
         dir: "v",
-        duration: 300,
+        duration: 200,
         page: 0,
         beforeChange: function (prev, next) {},
         afterChange: function (prev, next) {
@@ -38,7 +37,7 @@ export default {
         },
       },
       page: 0,
-      fonts: ["ACAT的创始", "实验室成就", "实验室设施", "加入我们吧"],
+      fonts: ["ACAT的创始", "实验室成果", "实验室环境"],
     };
   },
   methods: {
@@ -74,8 +73,9 @@ export default {
   height: 100vh;
 }
 .nav2 {
-  position: fixed;
   z-index: 99;
+  width: 100%;
+  height: 5vw;
 }
 .lists {
   position: fixed;

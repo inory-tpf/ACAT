@@ -1,15 +1,15 @@
 <template>
   <div class="main">
       <div class="fonts">
-          <div class="bigfonts1">前端</div>
-          <div class="bigfonts2">技术的可视化展示窗口</div>
+          <div class="bigfonts1">{{msg.title1}}</div>
+          <div class="bigfonts2">{{msg.title2}}</div>
       </div>
-      <bear></bear>
+      <bear v-if="msg.id==1"></bear>
   </div>
 </template>
 
 <script>
-import bear from "./bear"
+import bear from "../各组首屏/qd-bear"
 export default {
     data(){
         return{
@@ -18,7 +18,8 @@ export default {
     },
     components:{
         bear,
-    }
+    },
+    props:['msg']
 }
 </script>
 
