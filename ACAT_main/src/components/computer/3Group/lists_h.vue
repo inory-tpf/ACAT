@@ -17,6 +17,9 @@ export default {
     methods:{
         moveto(value){
             this.$parent.move(value)
+        },
+        change(){
+            this.page = 0
         }
     },
     props:{

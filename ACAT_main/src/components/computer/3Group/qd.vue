@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <lists :page="page"></lists>
+        <lists :page="page" ref="list"></lists>
         <div class="fullpage-container">
             <div class="fullpage-wp" v-fullpage="opts" ref="example">
                 <div class="page color"><mainpage></mainpage></div>
@@ -38,6 +38,7 @@ export default {
     methods: {
         changepage(){
             this.$refs.example.$fullpage.moveTo(0)
+            this.$refs.list.change()
         },
         move(value){
             this.$refs.example.$fullpage.moveTo(value)

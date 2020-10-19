@@ -63,8 +63,8 @@ export default {
   height: 100vw;
   background-color: rosybrown;
   transform: rotateZ(-25deg);
-  margin-left: 50vw;
-  margin-top: -50vw;
+  margin-left: 60vw;
+  margin-top: -40vw;
   box-shadow: 0 0 20px rgb(0, 0, 0,.3);
 }
 </style>

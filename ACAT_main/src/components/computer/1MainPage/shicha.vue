@@ -24,5 +24,6 @@ export default {
         font-weight: 600;
         line-height: 5vw;
         margin-top: 23vw; 
+        z-index: 99;
     }
 </style>

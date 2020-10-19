@@ -7,7 +7,9 @@
     <div class="part2">
       <Shicha></Shicha>
     </div>
-    <div class="part3"></div>
+    <div class="part3">
+      <group></group>
+    </div>
     <div class="part4">
       <Picwall></Picwall>
     </div>
@@ -22,6 +24,7 @@ import Mynav from "@/components/computer/1MainPage/nav_1"
 import Shicha from "@/components/computer/1MainPage/shicha"
 import Picwall from "@/components/computer/1MainPage/picwall"
 import Acatmap from "@/components/computer/1MainPage/map"
+import group from "@/components/computer/1MainPage/group"
 export default {
   name: 'page',
   data () {
@@ -42,12 +45,14 @@ export default {
     Shicha,
     Picwall,
     Acatmap,
+    group,
   },
   mounted(){
-    window.onload = () => {
-      window.addEventListener('scroll', this.picscroll)
-    }
+      window.addEventListener('scroll', this.picscroll,true)
   },
+  destroyed(){
+    window.removeEventListener('scroll', this.picscroll);
+  }
 }
 </script>
 
