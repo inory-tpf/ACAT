@@ -6,8 +6,8 @@
             </div>
         </div>
         <div class="map">
-            <div class="mespage"></div>
-            <div class="mes">
+            <div class="mespage" ref="back"></div>
+            <div class="mes" ref="msg">
                 <div class="logo"></div>
                 <div class="logo2"></div>
                 <div class="name">计算机应用技术协会</div>
@@ -21,7 +21,24 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            
+        }
+    },
+    methods:{
+        show(){
+            this.$refs.back.style.marginLeft = "55%"
+            this.$refs.msg.style.opacity= "1"
+        },
+        hide(){
+            this.$refs.back.style.marginLeft = "100%"
+            this.$refs.msg.style.opacity= "0"
+
+        },
+    }
+};
 </script>
 <style scoped>
 .main {
@@ -34,15 +51,11 @@ export default {};
     height: 120%;
     background-color: rgb(60, 66, 78);
     transform: rotateZ(-80deg);
-    margin-left: 55%;
+    margin-left: 100%;
     box-shadow: 0 0 15px rgb(0, 0, 0, 0.27);
+    transition: 1s ease-in-out;
 }
-/* .biaoqian {
-  position: relative;
-  width: 100%;
-  height: 8vw;
-  overflow: hidden;
-} */
+
 .back {
     position: absolute;
     width: 15vw;
@@ -69,7 +82,7 @@ export default {};
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/map/map.png");
+    background-image: url("../../../assets/img/联系我们/map.png");
     background-size: 100% auto;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(0, 0, 0, 0.27);
@@ -82,18 +95,20 @@ export default {};
     z-index: 99;
     right: 0;
     bottom: 0;
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
 .logo{
     width: 10vw;
     height: 10vw;
-    background-image: url("../../../assets/logo/catw.png");
+    background-image: url("../../../assets/img/logo/catw.png");
     background-size: 100% 100%;
     margin-left: 4vw;
 }
 .logo2{
     width: 10vw;
     height: 4vw;
-    background-image: url("../../../assets/logo/acatw.png");
+    background-image: url("../../../assets/img/logo/acatw.png");
     background-size: 100% auto;
     margin-left: 4vw;
     background-repeat: no-repeat;
@@ -118,7 +133,7 @@ export default {};
     float: left;
     width: 8vw;
     height: 10vw;
-    background-image: url("../../../assets/map/qq纳新二维码.jpg");
+    background-image: url("../../../assets/img/联系我们/qq纳新二维码.jpg");
     background-size: 100% auto;
     margin-top: 2vw;
 }

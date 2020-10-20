@@ -43,10 +43,10 @@ export default {
                         "这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字",
                     font3:
                         "这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字",
-                    pic1: require("../../../assets/group/qd/pic1.jpg"),
-                    pic2_1: require("../../../assets/group/qd/pic2.jpg"),
-                    pic2_2: require("../../../assets/group/qd/pic2.jpg"),
-                    pic2_3: require("../../../assets/group/qd/pic2.jpg"),
+                    pic1: require("../../../assets/img/组别/前端/pic1.jpg"),
+                    pic2_1: require("../../../assets/img/组别/前端/pic2.jpg"),
+                    pic2_2: require("../../../assets/img/组别/前端/pic2.jpg"),
+                    pic2_3: require("../../../assets/img/组别/前端/pic2.jpg"),
                 },
                 fwd: {
                     id: 2,
@@ -162,4 +162,5 @@ export default {
 .page1 {
     margin-top: 0;
 }
+
 </style>

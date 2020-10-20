@@ -25,7 +25,7 @@ export default {};
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../../../../assets/bear/bg3.png") no-repeat;
+  background: url("../../../../assets/img/动画效果/小熊/bg3.png") no-repeat;
   opacity: 0.2;
   animation: hill1 50s linear infinite;
 }
@@ -36,7 +36,7 @@ export default {};
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../../../../assets/bear/bg4.png") no-repeat;
+  background: url("../../../../assets/img/动画效果/小熊/bg4.png") no-repeat;
   opacity: 0.6;
   animation: hill2 40s linear infinite;
 }
@@ -47,7 +47,7 @@ export default {};
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../../../../assets/bear/bg2.png") no-repeat;
+  background: url("../../../../assets/img/动画效果/小熊/bg2.png") no-repeat;
   opacity: 1;
   animation: hill3 30s linear infinite;
 }
@@ -59,7 +59,7 @@ export default {};
   transform: translate(-50%, -50%);
   width: 200px;
   height: 100px;
-  background: url("../../../../assets/bear/bear.png") no-repeat;
+  background: url("../../../../assets/img/动画效果/小熊/bear.png") no-repeat;
   /* 我们元素可以添加多个动画， 用逗号分隔 */
   animation: bear 0.5s steps(8) infinite, move 3s forwards;
 }

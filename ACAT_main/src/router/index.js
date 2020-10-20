@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index2 from './computer'
 
 Vue.use(Router)
+
 var res = window.innerWidth  
 var routes = []
 if(res < 786){

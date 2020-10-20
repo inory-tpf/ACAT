@@ -1,14 +1,15 @@
 <template>
     <div class="main">
+        <!-- <animation1></animation1> -->
         <div class="pic" ref="scroll"></div>
         <div class="part1">
             <Mynav></Mynav>
         </div>
         <div class="part2">
-            <Shicha></Shicha>
+            <Shicha ref="animation1"></Shicha>
         </div>
         <div class="part3">
-            <jianjie></jianjie>
+            <jianjie ref="animation2"></jianjie>
         </div>
         <div class="part4">
             <group></group>
@@ -17,7 +18,7 @@
             <Picwall></Picwall>
         </div>
         <div class="part6">
-            <Acatmap></Acatmap>
+            <Acatmap ref="animation3"></Acatmap>
         </div>
     </div>
 </template>
@@ -29,6 +30,7 @@ import Picwall from "@/components/computer/1MainPage/picwall";
 import Acatmap from "@/components/computer/1MainPage/map";
 import group from "@/components/computer/1MainPage/group";
 import jianjie from "./jianjie";
+import animation1 from "../public/animation1";
 export default {
     name: "page",
     data() {
@@ -39,6 +41,26 @@ export default {
             this.$refs.scroll.style.marginTop =
                 -window.pageYOffset * 0.1 + "px";
         },
+        scroll() {
+            this.picscroll();
+            let vw = document.body.clientWidth / 100;
+            let percent = window.pageYOffset / vw;
+            if (percent >= 30 && percent <= 70) {
+                this.$refs.animation1.show();
+            }else{
+                this.$refs.animation1.hide()
+            }
+            if(percent >= 60 && percent <=100){
+                this.$refs.animation2.show()
+            }else{
+                this.$refs.animation2.hide()
+            }
+              if(percent >= 190 && percent <=250){
+                this.$refs.animation3.show()
+            }else{
+                this.$refs.animation3.hide()
+            }
+        },
     },
     components: {
         Mynav,
@@ -47,13 +69,17 @@ export default {
         Acatmap,
         group,
         jianjie,
+        animation1,
     },
     mounted() {
-        window.addEventListener("scroll", this.picscroll, true);
+        document.addEventListener("scroll", this.scroll, true);
     },
-    destroyed() {
-        window.removeEventListener("scroll", this.picscroll);
+    beforeRouteLeave(to, from, next) {
+        // ...
+        document.removeEventListener("scroll", this.scroll, true);
+        next();
     },
+    watch: {},
 };
 </script>
 
@@ -62,6 +88,7 @@ export default {
 .main {
     float: left;
     width: 100%;
+    height: 100%;
 }
 .part1 {
     width: 100%;
@@ -97,7 +124,7 @@ export default {
     position: fixed;
     width: 100%;
     height: 60vw;
-    background-image: url("../../../assets/shicha/QQ图片20201010174541.jpg");
+    background-image: url("../../../assets/img/视差/QQ图片20201010174541.jpg");
     background-size: 100% auto;
     z-index: -1;
     background-position: 0 -20vw;

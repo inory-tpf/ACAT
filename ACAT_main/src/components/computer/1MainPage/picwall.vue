@@ -77,44 +77,44 @@ export default {};
 }
 .pic1 {
     height: 45%;
-    background-image: url("../../../assets/IMG_20190421_123546.jpg");
+    background-image: url("../../../assets/img/test/IMG_20190421_123546.jpg");
     background-size: 100% auto;
 }
 .pic6 {
     height: 45%;
     margin-top: -13.7%;
-    background-image: url("../../../assets/IMG_20190421_135405.jpg");
+    background-image: url("../../../assets/img/test/IMG_20190421_135405.jpg");
     background-size: auto 100%;
 }
 .pic4 {
     width: 15%;
     height: 45%;
-    background-image: url("../../../assets/IMG_20191020_205855.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191020_205855.jpg");
     background-size: auto 100%;
 }
 .pic3 {
     width: 40%;
     height: 45%;
-    background-image: url("../../../assets/IMG_20191028_195020.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191028_195020.jpg");
     background-size: 100% auto;
 }
 .pic7 {
     width: 15%;
     height: 51.1%;
-    background-image: url("../../../assets/IMG_20191214_204942.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191214_204942.jpg");
     background-size: auto 100%;
 }
 .pic8 {
     width: 40%;
     height: 25%;
-    background-image: url("../../../assets/IMG_20191214_213313.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191214_213313.jpg");
     background-size: 100% auto;
     background-position: 0 30%;
 }
 .pic9 {
     width: 40%;
     height: 25%;
-    background-image: url("../../../assets/wx_camera_1572790631800.jpg");
+    background-image: url("../../../assets/img/test/wx_camera_1572790631800.jpg");
     background-size: 100% auto;
     background-position: 0 50%;
 }
@@ -122,17 +122,17 @@ export default {};
     width: 41%;
     height: 29.7%;
     margin-top: -17.3%;
-    background-image: url("../../../assets/IMG_20191214_205044.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191214_205044.jpg");
     background-size: 100% auto;
     background-position: 0 20%;
 }
 .pic5 {
-    background-image: url("../../../assets/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
+    background-image: url("../../../assets/img/test/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
     background-size: 100% auto;
     background-position: 0 50%;
 }
 .pic2 {
-    background-image: url("../../../assets/shicha/QQ图片20201010174541.jpg");
+    background-image: url("../../../assets/img/视差/QQ图片20201010174541.jpg");
     background-size: 100% auto;
     background-position: 0 40%;
 }

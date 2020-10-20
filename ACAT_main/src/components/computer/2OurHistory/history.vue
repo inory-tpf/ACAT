@@ -69,7 +69,7 @@ export default {};
 .head-pic {
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
+    background-image: url("../../../assets/img/test/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
     background-size: 100% auto;
     background-position: 0 45%;
     margin-left: 6%;
@@ -108,7 +108,7 @@ export default {};
     margin-left: 2vw;
     margin-top: 1vw;
     box-shadow: 0 0 15px rgb(22, 22, 22, 0.4);
-    background-image: url("../../../assets/IMG_20191020_205722.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191020_205722.jpg");
     background-size: auto 100%;
 }
 .pic2 {
@@ -117,7 +117,7 @@ export default {};
     margin-left: 22vw;
     margin-top: 7vw;
     z-index: 99;
-    background-image: url("../../../assets/IMG_20190421_135405.jpg");
+    background-image: url("../../../assets/img/test/IMG_20190421_135405.jpg");
     background-size: auto 100%;
 }
 .pic3 {
@@ -126,7 +126,7 @@ export default {};
     margin-left: 12vw;
     width: 16vw;
     height: 20vw;
-    background-image: url("../../../assets/IMG_20191214_205044.jpg");
+    background-image: url("../../../assets/img/test/IMG_20191214_205044.jpg");
     background-size: auto 100%;
 }
 .angle {
@@ -142,7 +142,7 @@ export default {};
 .logo {
     width: 8vw;
     height: 8vw;
-    background-image: url("../../../assets/logo/catw.png");
+    background-image: url("../../../assets/img/logo/catw.png");
     background-size: 100% 100%;
     transform: rotateZ(-45deg);
     margin-top: 6vw;

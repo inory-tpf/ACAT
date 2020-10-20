@@ -48,15 +48,13 @@ export default {
     animation: page 50s ease-in-out infinite;
 }
 .page1{
-    background-image: url("../../../assets/loop/pic.png");
+    background-image: url("../../../assets/img/轮播/pic.jpg");
     z-index: 300;
 }
 .page2{
-    background-image: url("../../../assets/loop/VCG41N613776610.jpg");
     z-index: 200;
 }
 .page3{
-    background-image: url("../../../assets/loop/VCG41N801030524.jpg");
     z-index: 100;
 }
 @keyframes page{

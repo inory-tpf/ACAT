@@ -63,6 +63,7 @@ export default {
       deep: true,
       immediate: true,
     },
+   
   },
 };
 </script>
@@ -121,4 +122,5 @@ export default {
   writing-mode: vertical-lr;
   text-align: center;
 }
+
 </style>

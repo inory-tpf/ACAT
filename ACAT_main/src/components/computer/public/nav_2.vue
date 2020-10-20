@@ -59,7 +59,7 @@ export default {
     margin-top: .5vw;
     margin-left: 1%;
     float: left;
-    background-image: url("../../../assets/logo/acatw.png");
+    background-image: url("../../../assets/img/logo/acatw.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
 }

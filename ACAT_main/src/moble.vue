@@ -1,6 +1,5 @@
 <template>
   <div id="moble">
-    <img src="../static/VCG211169346737.jpg">
     <router-view/>
   </div>
 </template>

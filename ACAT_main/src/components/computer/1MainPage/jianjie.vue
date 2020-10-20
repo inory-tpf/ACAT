@@ -5,10 +5,10 @@
                 <div class="item">实验室简介</div>
             </div>
         </div>
-         <div class="border1"></div>
-        <div class="border2"></div>
-        <div class="border3"></div>
-        <div class="border4"></div>
+        <div class="border1" ref="b1"></div>
+        <div class="border2" ref="b2"></div>
+        <div class="border3" ref="b3"></div>
+        <div class="border4" ref="b4"></div>
         <div class="logo"></div>
         <div class="logo2"></div>
         <div class="fonts">
@@ -18,7 +18,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {};
+    },
+    methods: {
+        show() {
+            this.$refs.b1.style.height = "10vw";
+            this.$refs.b3.style.height = "10vw";
+            this.$refs.b2.style.width = "25vw";
+            this.$refs.b4.style.width = "25vw";
+        },
+        hide() {
+            this.$refs.b1.style.height = "0vw";
+            this.$refs.b3.style.height = "0vw";
+            this.$refs.b2.style.width = "0vw";
+            this.$refs.b4.style.width = "0vw";
+        },
+    },
+};
 </script>
 
 <style scoped>
@@ -63,47 +81,50 @@ export default {};
     line-height: 2.5vw;
     margin-top: 5vw;
 }
-.border1,.border2,.border3,.border4{
+.border1,
+.border2,
+.border3,
+.border4 {
     position: absolute;
-    width: .2vw;
+    width: 0.2vw;
     height: 10vw;
     background-color: rgb(60, 66, 78);
     margin-left: 7vw;
     margin-top: 5vw;
-        background-color: rgb(95, 177, 159);
-
+    background-color: rgb(95, 177, 159);
+    transition:1s ease-in-out ;
 }
-.border2,.border4{
+.border2,
+.border4 {
     width: 25vw;
-    height: .2vw;
+    height: 0.2vw;
     margin-left: 8vw;
     margin-top: 3vw;
     background-color: rgb(60, 66, 78);
 }
-.border3{
+.border3 {
     margin-left: 92vw;
-    margin-top:8vw;
+    margin-top: 8vw;
 }
-.border4{
+.border4 {
     margin-top: 19vw;
     margin-left: 65vw;
 }
-.logo{
+.logo {
     position: absolute;
     width: 5vw;
     height: 5vw;
-    background-image: url("../../../assets/logo/pic.png");
+    background-image: url("../../../assets/img/logo/pic.png");
     background-size: 100% auto;
     right: 6vw;
 }
-.logo2{
+.logo2 {
     position: absolute;
     width: 10vw;
     height: 5vw;
-    background-image: url("../../../assets/logo/text.png");
+    background-image: url("../../../assets/img/logo/text.png");
     background-size: 100% auto;
     margin-top: 17vw;
     margin-left: 3vw;
-
 }
 </style>
