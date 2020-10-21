@@ -5,11 +5,13 @@
           <div class="bigfonts2">{{msg.title2}}</div>
       </div>
       <bear v-if="msg.id==1"></bear>
+      <java v-if="msg.title1 == 'JAVA'"></java>
   </div>
 </template>
 
 <script>
 import bear from "../各组首屏/qd-bear"
+import java from "../各组首屏/java"
 export default {
     data(){
         return{
@@ -18,6 +20,7 @@ export default {
     },
     components:{
         bear,
+        java,
     },
     props:['msg']
 }

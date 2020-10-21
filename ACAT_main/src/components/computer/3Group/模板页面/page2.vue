@@ -2,8 +2,8 @@
     <div class="main">
         <div class="fonts">
             <div class="bigfonts">{{msg.title1}}能做什么</div>
-            <div class="smallfonts">
-                {{msg.font2}}
+            <div class="smallfonts" v-html="msg.font2">
+                
             </div>
         </div>
         <div class="picplace">
@@ -74,7 +74,7 @@ export default {
   height: 95%;
   margin-left: 2.5%;
   margin-top: 2.5%;
-  box-shadow: 0 0 10px rgb(0, 0, 0,.6);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
   overflow: hidden;
 }
 .pic2{

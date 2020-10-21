@@ -50,12 +50,9 @@ export default {
         height: .5vw;
         border-radius: 50%;
         background-color:rgb(235, 238, 238);
-        border: .15vw solid rgb(60,66,78,.7);
+        border: .15vw solid rgb(60,66,78);
         margin-left: 1.3vw;
         margin-top: 1vw;
-    }
-    .item1{
-
     }
     .active{
         background-color: rgb(60,66,78);

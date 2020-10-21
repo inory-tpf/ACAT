@@ -16,7 +16,7 @@ export default {};
   position: absolute;
   width: 100%;
   height: 100%;
-  margin-top: 19vw;
+  margin-top: 17vw;
 }
 .demo1 {
   width: 100%;

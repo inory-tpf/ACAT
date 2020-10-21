@@ -1,5 +1,25 @@
 <template>
     <div class="main">
+        <div class="pic-block">
+            <div class="biaoqian">
+                <div class="bqfont">实验室创始人</div>
+            </div>
+            <div class="picbox">
+                <div class="pic1"></div>
+                <div class="name">name</div>
+                <div class="jieshao">这里是文字这里是文字这里是文字</div>
+            </div>
+            <div class="picbox">
+                <div class="pic1"></div>
+                <div class="name">name</div>
+                <div class="jieshao">这里是文字这里是文字这里是文字</div>
+            </div>
+            <div class="picbox">
+                <div class="pic1"></div>
+                <div class="name">name</div>
+                <div class="jieshao">这里是文字这里是文字这里是文字</div>
+            </div>
+        </div>
         <div class="fonts-block">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -12,14 +32,9 @@
                 </div>
             </div>
         </div>
-        <div class="pic-block">
-            <div class="pic1"></div>
-            <div class="pic2"></div>
-            <div class="pic3"></div>
-        </div>
-        <div class="angle">
+        <!-- <div class="angle">
             <div class="logo"></div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -37,15 +52,16 @@ export default {};
     float: left;
     width: 30%;
     height: 50vw;
-    margin-left: 14vw;
+    margin-left: 4vw;
 }
 .line1,
 .line2 {
     float: left;
     width: 0.2vw;
     height: 7vw;
-    background-color: rgb(22, 22, 22, 0.8);
+    background-color: rgb(22, 22, 22);
     margin-left: 5vw;
+    opacity: 0.8;
 }
 .line2 {
     margin-left: 20vw;
@@ -56,7 +72,7 @@ export default {};
     background-color: rgb(70, 76, 88);
     margin-top: 7vw;
     overflow: hidden;
-    box-shadow: 0 0 10px rgb(22, 22, 22, 0.8);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .head {
     float: left;
@@ -74,14 +90,14 @@ export default {};
     background-position: 0 45%;
     margin-left: 6%;
     margin-top: 5%;
-    box-shadow: 0 0 10px rgb(22, 22, 22, 0.8);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .fonts {
     width: 80%;
     margin-top: 53%;
     margin-left: 6%;
     font-size: 1.55vw;
-    color: rgb(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
     text-indent: 3vw;
     line-height: 2.5vw;
     letter-spacing: 0.15vw;
@@ -89,45 +105,61 @@ export default {};
     background-color: rgb(75, 81, 93);
     border: 1vw solid rgb(75, 81, 93);
     border-radius: 5px;
-    box-shadow: 0 0 15px rgb(22, 22, 22, 0.2);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
+    opacity: 0.9;
 }
 .pic-block {
     float: left;
-    width: 42vw;
-    height: 42.5vw;
-    margin-top: 5vw;
-    margin-left: 3vw;
+    width: 50vw;
+    height: 100%;
+    margin-left: 10vw;
 }
-.pic1,
-.pic2,
-.pic3 {
+.biaoqian {
     position: absolute;
-    width: 18vw;
-    height: 22vw;
+    width: 15vw;
+    height: 4vw;
+    background-color: rgb(70, 76, 88);
+    margin-top: 10vw;
+    box-shadow: 0 0 15px rgb(70, 70, 70);
+}
+.bqfont {
+    width: 100%;
+    height: 100%;
     background-color: rgb(95, 177, 159);
-    margin-left: 2vw;
     margin-top: 1vw;
-    box-shadow: 0 0 15px rgb(22, 22, 22, 0.4);
-    background-image: url("../../../assets/img/test/IMG_20191020_205722.jpg");
-    background-size: auto 100%;
+    margin-left: 1vw;
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: 600;
+    line-height: 4vw;
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
-.pic2 {
-    height: 18vw;
-    background-color: rosybrown;
-    margin-left: 22vw;
-    margin-top: 7vw;
-    z-index: 99;
-    background-image: url("../../../assets/img/test/IMG_20190421_135405.jpg");
-    background-size: auto 100%;
+.picbox {
+    float: left;
+    width: 30%;
+    height: 22vw;
+    margin-left: 3%;
+    margin-top: 19vw;
 }
-.pic3 {
-    background-color: salmon;
-    margin-top: 21vw;
-    margin-left: 12vw;
-    width: 16vw;
-    height: 20vw;
-    background-image: url("../../../assets/img/test/IMG_20191214_205044.jpg");
-    background-size: auto 100%;
+.pic1 {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../../../assets/img/logo/pic.png");
+    background-size: 100% auto;
+    border-radius: 50%;
+    border: 0.3vw solid rgb(70, 76, 88);
+    margin: 0 auto;
+}
+.name {
+    margin-top: 0.7vw;
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: rgb(95, 177, 159);
+}
+.jieshao {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0.7vw;
 }
 .angle {
     position: absolute;
@@ -137,7 +169,7 @@ export default {};
     right: -10vw;
     bottom: -10vw;
     transform: rotateZ(45deg);
-    box-shadow: 0 0 10px rgb(22, 22, 22, 0.9);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .logo {
     width: 8vw;

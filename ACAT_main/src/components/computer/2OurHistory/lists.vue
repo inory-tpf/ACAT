@@ -59,7 +59,7 @@ export default {
     border-radius: 50%;
     margin-left: -0.8vw;
     background-color: rgb(235, 238, 238);
-    border: 0.15vw solid rgb(60, 66, 78, 0.7);
+    border: 0.15vw solid rgb(60, 66, 78);
 }
 .item1 {
     margin-top: 25vh;

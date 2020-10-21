@@ -50,8 +50,8 @@ export default {
     width: 100%;
     height: 5vw;
     z-index: 999;
-    background-color:rgb(60,66,78,.9);
-    box-shadow: 0 0 15px rgb(60,66,78,.8);
+    background-color:rgb(70,76,88);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .logo{
     width: 13%;
@@ -78,12 +78,13 @@ export default {
     font-size: 1.5vw;
     text-align: center;
     line-height: 4vw;
-    color: rgb(255, 255, 255,.85);
+    color: rgb(255, 255, 255);
     font-weight: 600;
     transition: .5s ease-in-out;
+    opacity: .85;
 }
 .item:hover{
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    opacity: 1;
 }
 </style>

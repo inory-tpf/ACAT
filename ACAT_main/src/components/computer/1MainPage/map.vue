@@ -52,7 +52,7 @@ export default {
     background-color: rgb(60, 66, 78);
     transform: rotateZ(-80deg);
     margin-left: 100%;
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.27);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
     transition: 1s ease-in-out;
 }
 
@@ -61,7 +61,7 @@ export default {
     width: 15vw;
     height: 3vw;
     background-color: rgb(60, 66, 78);
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
     margin-top: 1vw;
     z-index: 99;
 }
@@ -76,7 +76,7 @@ export default {
     font-weight: 600;
     line-height: 3vw;
     letter-spacing: 0.3vw;
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 .map {
     position: relative;
@@ -85,7 +85,7 @@ export default {
     background-image: url("../../../assets/img/联系我们/map.png");
     background-size: 100% auto;
     overflow: hidden;
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.27);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 .mes {
     position: absolute;

@@ -43,7 +43,7 @@ export default {
     methods: {
         mousein(value) {},
         jump(value) {
-            this.$emit("pagevalue",value+1)
+            this.$emit("pagevalue", value + 1);
         },
     },
 };
@@ -86,8 +86,24 @@ export default {
     margin-top: 8vw;
     line-height: 9vw;
     color: rgb(70, 76, 88);
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgb(90, 90, 90);
     cursor: pointer;
+    animation: qd 10s ease-in-out infinite;
+    transition: .3s ease-in-out;
+}
+@keyframes qd {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 1vw);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+.qd:hover,.ht:hover,.fwd:hover,.jqxx:hover{
+    box-shadow: 0 0 20px rgb(70, 70, 70);
 }
 .fwd {
     width: 9vw;
@@ -96,6 +112,7 @@ export default {
     background-color: #ce916a;
     margin-left: 25vw;
     margin-top: 12vw;
+
 }
 .ht {
     width: 10vw;

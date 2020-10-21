@@ -36,14 +36,14 @@ export default {
     background-color:  rgb(95, 177, 159);
     margin-top: 9vw;
     margin-left: 15vw;
-    box-shadow: 0 0 10px rgb(22, 22, 22, 0.6);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
   }
   .pic{
     width: 100%;
     height: 100%;
     margin-left: 1.5vw;
     margin-top: 1.5vw;
-    box-shadow: 0 0 10px rgb(22, 22, 22, 0.8);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
     overflow: hidden;;
   }
   img{

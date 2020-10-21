@@ -118,7 +118,7 @@ export default {
 .line {
     width: 55%;
     height: 6%;
-    background-color: rgb(60, 66, 78, 0.9);
+    background-color: rgb(60, 66, 78);
     margin-top: 0.45vw;
     list-style: none;
     margin-left: 12.5%;
@@ -136,7 +136,7 @@ export default {
     position: absolute;
     width: 0.3vw;
     height: 20vw;
-    background-color: rgb(60, 66, 78, 0.9);
+    background-color: rgb(60, 66, 78);
     margin-left: 1vw;
     transition: 0.6s ease-in-out;
     opacity: 0;
@@ -147,27 +147,27 @@ export default {
     width: 7vw;
     height: 2vw;
     list-style: none;
-    border-bottom: 0.2vw solid rgb(60, 66, 78, 0.9);
+    border-bottom: 0.2vw solid rgb(60, 66, 78);
     margin-top: 1.3vw;
     font-size: 1.3vw;
     transition: 0.3s ease-in-out;
     margin-left: 0.3vw;
 }
 .listFont:hover {
-    border-bottom: 0.4vw solid rgb(86, 158, 142, 0.9);
+    border-bottom: 0.4vw solid rgb(86, 158, 142);
     color: rgb(86, 158, 142, 0.9);
     cursor: pointer;
 }
 .active {
     color: rgb(86, 158, 142, 0.9);
-    border-bottom: 0.4vw solid rgb(86, 158, 142, 0.9);
+    border-bottom: 0.4vw solid rgb(86, 158, 142);
 }
 .nowpage {
     position: absolute;
     width: 10vw;
     height: 3vw;
     margin-left: 4.5vw;
-    color: rgb(60, 66, 78, 0.9);
+    color: rgb(60, 66, 78);
     font-size: 1.8vw;
     text-align: left;
 }

@@ -13,7 +13,9 @@
         <div class="page color">
           <achieve></achieve>
         </div>
-        <div class="page color"></div>
+        <div class="page color">
+          <env></env>
+        </div>
       </div>
     </div>
   </div>
@@ -22,7 +24,8 @@
 import nav2 from "../public/nav_2";
 import lists from "./lists";
 import achieve from "./achieve";
-import history from './history'
+import history from './history';
+import env from "./env"
 export default {
   data() {
     return {
@@ -54,6 +57,7 @@ export default {
     lists,
     history,
     achieve,
+    env,
   },
   watch: {
     "opts.page": {
@@ -103,7 +107,7 @@ export default {
   width: .2vw;
   height: 30vw;
   z-index: 99;
-  background-color: rgb(60, 66, 78, 0.8);
+  background-color: rgb(60, 66, 78);
   margin-left: 4vw;
   margin-top: 12vw;
 }
@@ -114,7 +118,7 @@ export default {
   background-color: rgb(235, 238, 238);
   margin-top: 6.5vw;
   margin-left: -0.8vw;
-  color: rgb(60, 66, 78, 0.8);
+  color: rgb(60, 66, 78);
   font-size: 2vw;
   line-height: 2vw;
   letter-spacing: 0.7vw;

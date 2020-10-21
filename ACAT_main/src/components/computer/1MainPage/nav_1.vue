@@ -18,55 +18,55 @@
     </div>
 </template>
 <script>
-import loop from "./loop"
+import loop from "./loop";
 export default {
-    name:'nav_1',
+    name: "nav_1",
     data() {
         return {
             //true显示纳新接口 false隐藏纳新接口
-            nx : true
-        }
+            nx: true,
+        };
     },
-    components:{
-        loop
+    components: {
+        loop,
     },
-    methods:{
-        tp(num){
-            if(num === 1){
-                this.$router.replace('/history')
+    methods: {
+        tp(num) {
+            if (num === 1) {
+                this.$router.replace("/history");
             }
-            if(num === 2){
-                this.$router.replace('/group')
+            if (num === 2) {
+                this.$router.replace("/group");
             }
-            if(num === 3){
+            if (num === 3) {
                 //跳转至博客
             }
-            if(num === 4){
+            if (num === 4) {
                 //跳转至纳新界面
             }
-        }
-    }
-}
+        },
+    },
+};
 </script>
 <style scoped>
-.main{
+.main {
     width: 100%;
     height: 100%;
-    box-shadow: 0px 5px 15px rgb(0, 0, 0,.5);
+    box-shadow: 0px 5px 15px rgb(0, 0, 0);
 }
-.backColor{
+.backColor {
     position: absolute;
     width: 100%;
     height: 38vw;
-    background-color:rgb(60,66,78);
-    box-shadow: 0px 5px 10px rgb(0, 0, 0,.7);
+    background-color: rgb(60, 66, 78);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
-.nav{
+.nav {
     position: absolute;
     width: 100%;
     height: 6vw;
 }
-.logo{
+.logo {
     width: 13%;
     height: 4vw;
     margin-top: 1vw;
@@ -76,13 +76,13 @@ export default {
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
-.nav-list{
+.nav-list {
     float: left;
     width: 70vw;
     height: 4vw;
     margin-top: 1vw;
-}   
-.item{
+}
+.item {
     float: left;
     width: 10vw;
     list-style: none;
@@ -91,43 +91,47 @@ export default {
     font-size: 1.5vw;
     text-align: center;
     line-height: 4vw;
-    color: rgb(255, 255, 255,.85);
-    font-weight: 600;
-    transition: .5s ease-in-out;
-}
-.item:hover{
-    cursor: pointer;
     color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    opacity: .85;
+}
+.item:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
-.fonts{
+.fonts {
     position: absolute;
     width: 50vw;
     height: 30vw;
     margin-left: 27vw;
     margin-top: 8vw;
     z-index: 999;
+    
 }
-.font1{
+.font1 {
     width: 35vw;
     height: 7vw;
-  background-color: rgb(95, 177, 159,.9);
+    background-color: rgb(94, 176, 158);
     margin: 0 auto;
     font-size: 2.3vw;
-    color: rgb(255, 255, 255,.9);
+    color: rgb(255, 255, 255);
     font-weight: 600;
     line-height: 7vw;
     margin-top: 8vw;
-    letter-spacing: .2vw;
+    letter-spacing: 0.2vw;
+    opacity: .9;
 }
-.font2{
+.font2 {
     width: 33vw;
     height: 4vw;
     margin: 0 auto;
-    background-color: rgb(0, 0,0,.6);
-    color: rgb(255, 255, 255,.9);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     line-height: 4vw;
     margin-top: 1.6vw;
     font-size: 1.3vw;
+    opacity: .6;
 }
 </style>

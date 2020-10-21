@@ -3,27 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>acat</title>
+    <title>ACAT计算机技术应用协会</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png" rel="external nofollow">
     <style>
       html,body{
         width: 100%;
         height: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
       }
       #Loading{
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 100vh;
+      }
+      .load_fonts{
+        position: absolute;
+        width: 20vw;
+        height: 5vw;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,0%);
+      }
+      .load_font-a,.load_font-c,.load_font-a2,.load_font-t,.load_sfonts{
+        float: left;
+        width: 5vw;
+        height: 5vw;
+        color: rgb(60,68,78);
+        font-size: 5vw;
+        text-align: center;
+        line-height: 5vw;
+        font-weight: 600;
+      }
+      .load_sfonts{
+        width: 19vw;
+        font-size: 2vw;
       }
     </style>
   </head>
   <body>
     <div id="Loading">
-      <div class="loader-inner ball-beat">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="load_fonts">
+        <div class="load_font-a">A</div>
+        <div class="load_font-c">C</div>
+        <div class="load_font-a2">A</div>
+        <div class="load_font-t">T</div>
+        <div class="load_sfonts">计算机应用技术协会</div>
       </div>
     </div>
     <div id="app"></div>

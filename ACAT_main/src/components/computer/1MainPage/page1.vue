@@ -102,7 +102,7 @@ export default {
 .part3 {
     width: 100%;
     height: 30vw;
-    box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px rgb(70, 70, 70);
     background-color: rgb(235, 238, 238);
 }
 .part4 {

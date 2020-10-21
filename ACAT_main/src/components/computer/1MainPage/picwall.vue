@@ -7,8 +7,8 @@
         </div>
         <div class="frame">
             <div class="fontsPlace">
-                <div class="font1">这里是文字</div>
-                <div class="font2">这里还是文字</div>
+                <div class="font1">匆匆岁月</div>
+                <div class="font2">时光剪影</div>
             </div>
             <ul class="picPlace">
                 <li class="pic1">1</li>
@@ -39,7 +39,7 @@ export default {};
     width: 100%;
     height: 40vw;
     margin-top: 1vw;
-    box-shadow: 0 0 15px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 .fontsPlace {
     float: left;
@@ -73,7 +73,7 @@ export default {};
     list-style: none;
     margin-left: 1%;
     margin-top: 0.5vw;
-    box-shadow: 3px 3px 9px rgb(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 .pic1 {
     height: 45%;
@@ -148,7 +148,8 @@ export default {};
     position: absolute;
     width: 70%;
     height: 40vw;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0);
+    opacity: .2;
 }
 .biaoqian {
   position: relative;
@@ -161,7 +162,7 @@ export default {};
   height: 3vw;
   background-color: rgb(60, 66, 78);
   bottom: 2vw;
-  box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
   left: 50%;
   margin-left: -7.5vw;
 }
@@ -176,7 +177,7 @@ export default {};
   font-weight: 600;
   line-height: 3vw;
   letter-spacing: 0.3vw;
-  box-shadow: 0 0 15px rgb(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 .font1,.font2{
     float: left;
@@ -184,9 +185,10 @@ export default {};
     height: 20vw;
     font-size: 2.6vw;
     font-weight: 600;
-    color:rgb(255,255,255,.8);
+    color:rgb(255,255,255);
     margin-left: 8vw;
     margin-top: 8vw;
+    opacity: .8;
 }
 .font2{
     margin-left: 2vw;
