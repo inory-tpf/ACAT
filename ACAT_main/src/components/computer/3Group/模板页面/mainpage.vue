@@ -1,17 +1,19 @@
 <template>
   <div class="main">
-      <div class="fonts">
-          <div class="bigfonts1">{{msg.title1}}</div>
-          <div class="bigfonts2">{{msg.title2}}</div>
-      </div>
-      <bear v-if="msg.id==1"></bear>
-      <java v-if="msg.title1 == 'JAVA'"></java>
+      <bear v-if="msg.id==1" :msg = "msg"></bear>
+      <java v-if="msg.title1 == 'JAVA'" :msg = "msg"></java>
+      <go v-if="msg.title1 == 'GO'" :msg = "msg"></go>
+      <fwd v-if="msg.id==2" :msg = "msg"></fwd>
+      <jqxx v-if="msg.id==4" :msg = "msg"></jqxx>
   </div>
 </template>
 
 <script>
 import bear from "../各组首屏/qd-bear"
 import java from "../各组首屏/java"
+import go from "../各组首屏/go"
+import fwd from "../各组首屏/fwd"
+import jqxx from "../各组首屏/jqxx"
 export default {
     data(){
         return{
@@ -21,6 +23,9 @@ export default {
     components:{
         bear,
         java,
+        go,
+        fwd,
+        jqxx,
     },
     props:['msg']
 }
@@ -32,23 +37,5 @@ export default {
     height: 100%;
     background-color: #ccc;
 }
-    .fonts{
-        position: absolute;
-        width: 40vw;
-        height: 20vw;
-        margin-left: 20vw;
-        margin-top: 10vw;
-        z-index: 99;
-        font-size: 3vw;
-        color:  rgb(70, 76, 88);
-        font-weight: 600;
-        text-align: left;
-    }
-    .bigfonts1{
-        font-size: 4vw;
-    }
-    .bigfonts2{
-        margin-top: 1vw;
-        margin-left: 3vw;
-    }
+    
 </style>

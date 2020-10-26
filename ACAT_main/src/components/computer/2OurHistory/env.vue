@@ -97,10 +97,10 @@ img {
   box-sizing: border-box;
   overflow: hidden;
 }
-.entryEnvPic:hover img {
+/* .entryEnvPic:hover img {
   width: 120%;
   height: 120%;
-}
+} */
 .entryEnvWord {
   width: 100%;
   height: 30%;
@@ -138,10 +138,10 @@ img {
   border: 3px solid #464c58;
   overflow: hidden;
 }
-.detailEnvPic:hover img {
+/* .detailEnvPic:hover img {
   width: 120%;
   height: 120%;
-}
+} */
 .detailEnvWord {
   width: 100%;
   height: 30%;

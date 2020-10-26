@@ -2,10 +2,13 @@
     <div class="main">
         <div class="fonts">
             <div class="bigfonts">{{ msg.title1 }}的发展前景</div>
-            <div class="smallfonts">{{ msg.font3 }}</div>
+            <div class="smallfonts" v-html="msg.font3"></div>
         </div>
-        <div class="join">Join Us</div>
-        <div class="loop"></div>
+        <!-- <div class="join">Join Us</div> -->
+        <div class="loop">
+            <img :src="msg.pic3_1"/>
+            <img :src="msg.pic3_2"/>
+        </div>
     </div>
 </template>
 
@@ -43,7 +46,6 @@ export default {
 .smallfonts {
     width: 100%;
     margin-top: 2vw;
-    text-indent: 3vw;
     text-align: left;
     line-height: 2.3vw;
     letter-spacing: 0.17vw;
@@ -64,12 +66,16 @@ export default {
 }
 .loop {
     position: absolute;
-    width: 70vw;
+    width: 40vw;
     height: 100vw;
-    background-color: rosybrown;
-    transform: rotateZ(-25deg);
+    /* transform: rotateZ(-25deg); */
     margin-left: 60vw;
-    margin-top: -40vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
+    margin-top: 5vw;
+    padding: 0;
+}
+img{
+    width: auto;
+    height: 20vw;
 }
 </style>

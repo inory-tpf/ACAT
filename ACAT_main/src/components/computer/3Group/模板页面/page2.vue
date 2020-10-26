@@ -1,20 +1,18 @@
 <template>
     <div class="main">
         <div class="fonts">
-            <div class="bigfonts">{{msg.title1}}能做什么</div>
-            <div class="smallfonts" v-html="msg.font2">
-                
-            </div>
+            <div class="bigfonts">{{ msg.title1 }}能做什么</div>
+            <div class="smallfonts" v-html="msg.font2"></div>
         </div>
         <div class="picplace">
             <div class="pic1">
-                <img :src="msg.pic2_1"/>
+                <img :src="msg.pic2_1" />
             </div>
             <div class="pic2">
-                <img :src="msg.pic2_2"/>
+                <img :src="msg.pic2_2" />
             </div>
             <div class="pic3">
-                <img :src="msg.pic2_3"/>
+                <img :src="msg.pic2_3" />
             </div>
         </div>
     </div>
@@ -23,11 +21,9 @@
 <script>
 export default {
     data() {
-        return {
-            
-        }
+        return {};
     },
-    props:['msg']
+    props: ["msg"],
 };
 </script>
 
@@ -37,7 +33,7 @@ export default {
     height: 100%;
 }
 .fonts {
-  float: left;
+    float: left;
     width: 40vw;
     height: 30vw;
     margin-left: 10vw;
@@ -56,10 +52,10 @@ export default {
 .smallfonts {
     width: 100%;
     margin-top: 2vw;
-    text-indent: 3vw;
     text-align: left;
     line-height: 2.3vw;
     letter-spacing: 0.17vw;
+    text-indent: 0;
 }
 .picplace {
     float: left;
@@ -68,26 +64,28 @@ export default {
     margin-left: 4vw;
     margin-top: 6vw;
 }
-.pic1,.pic2,.pic3{
-  float: left;
-  width: 47.5%;
-  height: 95%;
-  margin-left: 2.5%;
-  margin-top: 2.5%;
+.pic1,
+.pic2,
+.pic3 {
+    float: left;
+    width: 47.5%;
+    height: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
     box-shadow: 0 0 15px rgb(70, 70, 70);
-  overflow: hidden;
+    overflow: hidden;
 }
-.pic2{
-  float: left;
-  width: 45%;
-  height: 35%;
+.pic2 {
+    float: left;
+    width: 45%;
+    height: 35%;
 }
-.pic3{
-  float: left;
-  width: 45%;
-  height: 57.5%;
+.pic3 {
+    float: left;
+    width: 45%;
+    height: 57.5%;
 }
-img{
+img {
     width: auto;
     height: 100%;
 }

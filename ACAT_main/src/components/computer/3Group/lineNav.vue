@@ -109,11 +109,13 @@ export default {
     margin-top: 6vw;
     margin-left: 1vw;
     padding: 0;
+    
 }
 .lines {
     width: 100%;
     height: 100%;
     cursor: pointer;
+    
 }
 .line {
     width: 55%;
@@ -142,6 +144,7 @@ export default {
     opacity: 0;
     margin-top: -30vw;
     padding: 0;
+    
 }
 .listFont {
     width: 7vw;
@@ -152,6 +155,7 @@ export default {
     font-size: 1.3vw;
     transition: 0.3s ease-in-out;
     margin-left: 0.3vw;
+    font-weight: 600;    
 }
 .listFont:hover {
     border-bottom: 0.4vw solid rgb(86, 158, 142);

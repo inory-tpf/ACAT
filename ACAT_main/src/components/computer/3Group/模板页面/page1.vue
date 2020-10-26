@@ -7,7 +7,7 @@
       </div>
       <div class="fonts">
         <div class="bigfonts">{{msg.title1}}是什么</div>
-        <div class="smallfonts">{{msg.font1}}</div>
+        <div class="smallfonts" v-html="msg.font1"></div>
       </div>
   </div>
 </template>
@@ -45,6 +45,7 @@ export default {
     margin-top: 1.5vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
     overflow: hidden;;
+
   }
   img{
     width: 100%;
@@ -69,9 +70,9 @@ export default {
   .smallfonts{
     width: 100%;
     margin-top: 2vw;
-    text-indent: 3vw;
     text-align: left;
     line-height: 2.3vw;
     letter-spacing: .17vw;
+
   }
 </style>
