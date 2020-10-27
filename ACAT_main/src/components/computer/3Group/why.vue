@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+        <div class="bigfonts">实验室为什么要分组</div>
         <div class="fonts">
             这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里
         </div>
@@ -54,11 +55,20 @@ export default {
     width: 100%;
     height: 100%;
 }
+.bigfonts {
+    position: absolute;
+    height: 5vw;
+    color: rgb(86, 158, 142);
+    font-size: 2vw;
+    margin-top: 13vw;
+    margin-left: 6vw;
+    font-weight: 600;
+}
 .fonts {
     float: left;
     width: 50%;
     height: 30vw;
-    margin-top: 15vw;
+    margin-top: 19vw;
     margin-left: 8%;
     font-size: 1.75vw;
     color: rgb(70, 76, 88);
@@ -89,7 +99,7 @@ export default {
     box-shadow: 0 0 15px rgb(90, 90, 90);
     cursor: pointer;
     animation: qd 10s ease-in-out infinite;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 @keyframes qd {
     0% {
@@ -98,11 +108,14 @@ export default {
     50% {
         transform: translate(0, 1vw);
     }
-    100%{
+    100% {
         transform: translate(0, 0);
     }
 }
-.qd:hover,.ht:hover,.fwd:hover,.jqxx:hover{
+.qd:hover,
+.ht:hover,
+.fwd:hover,
+.jqxx:hover {
     box-shadow: 0 0 20px rgb(70, 70, 70);
 }
 .fwd {
@@ -112,7 +125,6 @@ export default {
     background-color: #ce916a;
     margin-left: 25vw;
     margin-top: 12vw;
-
 }
 .ht {
     width: 10vw;

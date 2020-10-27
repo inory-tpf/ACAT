@@ -19,7 +19,7 @@ import page1 from "./模板页面/page1";
 import page2 from "./模板页面/page2";
 import page3 from "./模板页面/page3";
 import lists from "./lists_h";
-import mengban from "./mengban";
+import mengban from "./choseBlock";
 export default {
     name: "qd",
     data() {

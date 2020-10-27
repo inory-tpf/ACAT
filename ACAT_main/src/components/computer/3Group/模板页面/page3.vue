@@ -6,8 +6,8 @@
         </div>
         <!-- <div class="join">Join Us</div> -->
         <div class="loop">
-            <img :src="msg.pic3_1"/>
-            <img :src="msg.pic3_2"/>
+            <div class="pic1"><img :src="msg.pic3_1" /></div>
+            <div class="pic1"><img :src="msg.pic3_2" /></div>
         </div>
     </div>
 </template>
@@ -31,7 +31,7 @@ export default {
     width: 40vw;
     height: 30vw;
     margin-left: 10vw;
-    margin-top: 15vw;
+    margin-top: 13vw;
     color: rgb(70, 76, 88);
     font-size: 1.6vw;
 }
@@ -61,21 +61,26 @@ export default {
     color: #ffffff;
     font-size: 2vw;
     line-height: 5vw;
-        box-shadow: 0 0 15px rgb(70, 70, 70);
-
+    box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .loop {
-    position: absolute;
+    position: relative;
     width: 40vw;
-    height: 100vw;
+    height: 45vw;
     /* transform: rotateZ(-25deg); */
     margin-left: 60vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
     margin-top: 5vw;
     padding: 0;
 }
-img{
+img {
     width: auto;
-    height: 20vw;
+    height: 100%
+}
+.pic1{
+    position: relative;
+    width: 100%;
+    height: 50%
+    
 }
 </style>

@@ -24,7 +24,7 @@
 <script>
 import nav_2 from "../public/nav_2";
 import lineNav from "./lineNav";
-import muban from "./muban";
+import muban from "./template";
 import why from "./why";
 export default {
     data() {

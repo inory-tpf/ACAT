@@ -159,11 +159,11 @@ export default {
 }
 .listFont:hover {
     border-bottom: 0.4vw solid rgb(86, 158, 142);
-    color: rgb(86, 158, 142, 0.9);
+    color: rgb(86, 158, 142);
     cursor: pointer;
 }
 .active {
-    color: rgb(86, 158, 142, 0.9);
+    color: rgb(86, 158, 142);
     border-bottom: 0.4vw solid rgb(86, 158, 142);
 }
 .nowpage {

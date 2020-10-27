@@ -25,7 +25,7 @@ import nav2 from "../public/nav_2";
 import lists from "./lists";
 import achieve from "./achieve";
 import history from './history';
-import env from "./env"
+import env from "./environment"
 export default {
   data() {
     return {
@@ -96,12 +96,7 @@ export default {
 .color {
   background-color: rgb(235, 238, 238);
 }
-.color2 {
-  background-color: springgreen;
-}
-.color3 {
-  background-color: steelblue;
-}
+
 .title-line {
   position: absolute;
   width: .2vw;
