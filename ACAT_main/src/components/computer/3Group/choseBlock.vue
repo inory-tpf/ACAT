@@ -29,17 +29,6 @@ export default {
         pull() {
             this.$refs.mengban.style.marginTop = "0";
         },
-        // hover(value){
-        //     if(value==1){
-        //         this.$refs.mb1.style.height = "100%"
-        //         this.$refs.mb2.style.height = "0%"
-        //     }
-
-        //     if(value==2){
-        //         this.$refs.mb2.style.height = "100%"
-        //         this.$refs.mb1.style.height = "0%"
-        //     }
-        // }
     },
 };
 </script>

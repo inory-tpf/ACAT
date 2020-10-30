@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <transition :name="transitionName">
-            <router-view></router-view>
+            <router-view v-if="isRouterAlive"></router-view>
         </transition>
     </div>
 </template>
@@ -12,6 +12,12 @@ export default {
     data() {
         return {
             transitionName: "",
+            isRouterAlive: true,
+        };
+    },
+    provide() {
+        return {
+            reload: this.reload,
         };
     },
     watch: {
@@ -27,6 +33,14 @@ export default {
     },
     created() {
         document.body.removeChild(document.getElementById("Loading")); // 加载页面完后移除加载动画
+    },
+    methods: {
+        reload() {
+            this.isRouterAlive = false;
+            this.$nextTick(function () {
+                this.isRouterAlive = true;
+            });
+        },
     },
 };
 </script>

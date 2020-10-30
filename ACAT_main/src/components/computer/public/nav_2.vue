@@ -18,16 +18,20 @@ export default {
             
         }
     },
+    inject: ['reload'],
     methods:{
         tp(num){
             if(num === 0){
                 this.$router.replace('/')
+                this.reload();
             }
             if(num === 1){
                 this.$router.replace('/history')
+                this.reload();
             }
             if(num === 2){
                 this.$router.replace('/group')
+                this.reload();
             }
             if(num === 3){
                 //跳转至博客
@@ -62,6 +66,7 @@ export default {
     background-image: url("../../../assets/img/logo/acatw.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .nav-list{
     float: left;

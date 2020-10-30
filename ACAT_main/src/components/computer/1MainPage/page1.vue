@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+        <show></show>
         <!-- <animation1></animation1> -->
         <div class="pic" ref="scroll"></div>
         <div class="part1">
@@ -30,7 +31,7 @@ import Picwall from "@/components/computer/1MainPage/picwall";
 import Acatmap from "@/components/computer/1MainPage/map";
 import group from "@/components/computer/1MainPage/group";
 import jianjie from "./jianjie";
-import animation1 from "../public/animation1";
+import show from "./show"
 export default {
     name: "page",
     data() {
@@ -70,6 +71,7 @@ export default {
         group,
         jianjie,
         animation1,
+        show,
     },
     mounted() {
         document.addEventListener("scroll", this.scroll, true);

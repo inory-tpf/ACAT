@@ -54,7 +54,7 @@ export default {
     position: absolute;
     width: 15vw;
     height: 5vw;
-    background-color: rgb(95, 177, 159);
+    background-color: #5fb19f;
     margin-top: 38vw;
     margin-left: 8vw;
     border-radius: 2.5vw;
