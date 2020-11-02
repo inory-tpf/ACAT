@@ -2,12 +2,8 @@
     <div class="main" ref="pic">
         <div class="back"></div>
         <div class="picplace" @mousewheel.prevent="rollImg">
-            <img
-                :src="piclist[this.value - 1]"
-                ref="imgDiv"
-                @mousedown="move"
-                class="pic"
-            />
+            <div ref="imgDiv" class="pic">
+            <img @mousedown="move" :src="piclist[this.value - 1]" /></div>
         </div>
         <div class="close" @click="close"></div>
     </div>
@@ -38,10 +34,10 @@ export default {
     },
     watch: {
         picstate() {
-            if(this.picstate=="true"){
+            if (this.picstate == "true") {
                 this.$refs.pic.style.cssText += ";display:block";
             }
-            if(this.picstate=="false"){
+            if (this.picstate == "false") {
                 this.$refs.pic.style.cssText += ";display:none";
             }
         },
@@ -54,11 +50,13 @@ export default {
             var img = document.querySelector(".pic");
             var x = e.pageX - img.offsetLeft;
             var y = e.pageY - img.offsetTop;
+
             // 添加鼠标移动事件
             left.addEventListener("mousemove", move);
             function move(e) {
                 img.style.left = e.pageX - x + "px";
                 img.style.top = e.pageY - y + "px";
+                console.log(img.style.left);
             }
             // 添加鼠标抬起事件，鼠标抬起，将事件移除
             img.addEventListener("mouseup", function () {
@@ -76,15 +74,16 @@ export default {
             /* event.wheelDelta 获取滚轮滚动值并将滚动值叠加给缩放比zoom wheelDelta统一为±120，其中正数表示为向上滚动，负数表示向下滚动 */
             zoom += event.wheelDelta / 12;
             /* 最小范围 和 最大范围 的图片缩放尺度 */
-            if (zoom >= 80 && zoom < 500) {
+            if (zoom >= 80 && zoom < 150) {
                 this.$refs.imgDiv.style.zoom = zoom + "%";
             }
             return false;
         },
         close() {
-            console.log(this.value)
+            console.log(this.value);
             this.$store.commit("change", [this.value, "false"]);
-            this.$refs.imgDiv.style.cssText += ';left:50%;top:0px'
+            this.$refs.imgDiv.style.cssText += ";left:0%;top:0px";
+            this.$refs.imgDiv.style.zoom = "100%";
         },
     },
 };
@@ -105,19 +104,21 @@ export default {
     opacity: 0.3;
 }
 .picplace {
-    position: absolute;
     width: 60vw;
     height: 35vw;
-    left: 50%;
-    top: 50%;
+    margin-left: 50%;
+    margin-top: 25%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     overflow: hidden;
 }
+.pic{
+    position: relative;
+
+}
 img {
-    position: absolute;
     max-width: 923px;
     max-height: 460px;
-    transform: translateX(-50%);
 }
 .close {
     position: absolute;
@@ -128,9 +129,9 @@ img {
     top: 4vw;
     background-image: url("../../../assets/img/icon/关闭.png");
     background-size: 100% 100%;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-.close:hover{
+.close:hover {
     transform: rotate(90deg);
 }
 </style>

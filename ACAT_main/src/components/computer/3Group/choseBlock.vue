@@ -1,13 +1,9 @@
 <template>
-    <div class="main" ref="mengban">
+    <div class="main" ref="mengban" :class="{'active':groupState=='false'}">
         <div class="java" @click="submit('java')">
-            <!-- <div class="bigfonts">JAVA</div>
-            <div class="smallfonts">这里是文字这里是文字</div> -->
             <div class="mengban1" ref="mb1"></div>
         </div>
         <div class="go" @click="submit('go')">
-            <!-- <div class="bigfonts"></div>
-            <div class="smallfonts">这里是文字这里是文字</div> -->
             <div class="mengban2" ref="mb2"></div>
         </div>
         <div class="line" @click="pull">
@@ -17,19 +13,25 @@
 </template>
 
 <script>
+import store from "@/vuex/store"
+import {mapState , mapMutations} from "vuex"
 export default {
     data() {
-        return {};
+        return {
+        };
     },
     methods: {
         submit(value) {
             this.$parent.switch(value);
-            this.$refs.mengban.style.marginTop = "-100vh";
+            this.groupChange('close')
         },
         pull() {
-            this.$refs.mengban.style.marginTop = "0";
+            this.groupChange('open')
         },
+        ...mapMutations(['groupChange'])
     },
+    store,
+    computed:mapState(['groupState'])
 };
 </script>
 
@@ -39,8 +41,11 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 999;
-    transition: 1s ease-in-out;
+    transition: .5s linear;
     background-color: rgb(235, 238, 238);
+}
+.active{
+    margin-top: -100vh;
 }
 .java,
 .go {

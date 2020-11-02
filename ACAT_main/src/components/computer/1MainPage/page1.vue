@@ -70,7 +70,6 @@ export default {
         Acatmap,
         group,
         jianjie,
-        animation1,
         show,
     },
     mounted() {

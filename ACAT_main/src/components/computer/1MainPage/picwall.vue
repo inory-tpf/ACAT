@@ -233,7 +233,7 @@ export default {
     float: left;
     width: 4vw;
     height: 20vw;
-    font-size: 2.6vw;
+    font-size: 3vw;
     font-weight: 600;
     color: rgb(255, 255, 255);
     margin-left: 8vw;
@@ -242,5 +242,6 @@ export default {
 }
 .font2 {
     margin-left: 2vw;
+    margin-top: 10vw;
 }
 </style>

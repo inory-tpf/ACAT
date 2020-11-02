@@ -47,6 +47,8 @@
 </template>
 
 <script>
+import store from "@/vuex/store";
+import { mapMutations, mapState } from "vuex";
 export default {
     data() {
         return {
@@ -91,12 +93,17 @@ export default {
             this.$refs.line3.style.transform = "rotateZ(0deg)";
             this.$refs.lists.style.cssText += ";opacity: 0;margin-top: -30vw;";
             this.line = true;
+            if (value == 4) {
+                this.groupChange("open");
+            }
         },
-        changenowpage(value){
-            this.nowpage = this.pages[value-1]
-            this.msg.value = value
-        }, 
+        changenowpage(value) {
+            this.nowpage = this.pages[value - 1];
+            this.msg.value = value;
+        },
+        ...mapMutations(["groupChange"]),
     },
+    store,
 };
 </script>
 
@@ -109,13 +116,11 @@ export default {
     margin-top: 6vw;
     margin-left: 1vw;
     padding: 0;
-    
 }
 .lines {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    
 }
 .line {
     width: 55%;
@@ -144,7 +149,6 @@ export default {
     opacity: 0;
     margin-top: -30vw;
     padding: 0;
-    
 }
 .listFont {
     width: 7vw;
@@ -155,7 +159,7 @@ export default {
     font-size: 1.3vw;
     transition: 0.3s ease-in-out;
     margin-left: 0.3vw;
-    font-weight: 600;    
+    font-weight: 600;
 }
 .listFont:hover {
     border-bottom: 0.4vw solid rgb(86, 158, 142);

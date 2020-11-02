@@ -2,22 +2,34 @@
     <div class="main">
         <div class="pic-block">
             <div class="biaoqian">
-                <div class="bqfont">实验室创始人</div>
+                <div class="bqfont">实验室指导老师</div>
             </div>
-            <div class="picbox">
-                <div class="pic1"></div>
-                <div class="name">name</div>
-                <div class="jieshao">这里是文字这里是文字这里是文字</div>
-            </div>
-            <div class="picbox">
-                <div class="pic1"></div>
-                <div class="name">name</div>
-                <div class="jieshao">这里是文字这里是文字这里是文字</div>
-            </div>
-            <div class="picbox">
-                <div class="pic1"></div>
-                <div class="name">name</div>
-                <div class="jieshao">这里是文字这里是文字这里是文字</div>
+            <div class="mainbox">
+                <div class="picbox">
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/图片1.png"/></div>
+                    <div class="name">余俊</div>
+                    <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
+                </div>
+                <div class="picbox">
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic2.png"/></div>
+                    <div class="name">李培</div>
+                    <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
+                </div>
+                <div class="picbox">
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic3.png"/></div>
+                    <div class="name">白琳</div>
+                    <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
+                </div>
+                <div class="picbox left">
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic4.png"/></div>
+                    <div class="name">牛晓晨</div>
+                    <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
+                </div>
+                <div class="picbox">
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/微信图片_20201102194347副本.png"/></div>
+                    <div class="name">孙家泽</div>
+                    <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
+                </div>
             </div>
         </div>
         <div class="fonts-block">
@@ -28,7 +40,7 @@
                     <div class="head-pic"></div>
                 </div>
                 <div class="fonts">
-                    这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字
+                    自2014年创立之初发展至今。协会始终着眼于未来蓬勃的计算机互联网应月技术服务领域，结合开放实验的进行、科研项目的完成、相关科技竞赛的参与等实践活动。以项目为驱动之源，打牢技术理论基础，锤炼实践动手能力，培养学生分析解决实际问题的综合能力。
                 </div>
             </div>
         </div>
@@ -68,7 +80,7 @@ export default {};
 }
 .block {
     width: 30vw;
-    height: 40vw;
+    height: 41vw;
     background-color: rgb(70, 76, 88);
     margin-top: 7vw;
     overflow: hidden;
@@ -85,7 +97,7 @@ export default {};
 .head-pic {
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/img/test/Screenshot_2019-11-11-12-27-37-411_com.tencent.mo.jpg");
+    background-image: url("../../../assets/img/了解我们/简介.png");
     background-size: 100% auto;
     background-position: 0 45%;
     margin-left: 6%;
@@ -108,6 +120,10 @@ export default {};
     box-shadow: 0 0 15px rgb(70, 70, 70);
     opacity: 0.9;
 }
+img{
+    width: 100%;
+    height:auto
+}
 .pic-block {
     float: left;
     width: 50vw;
@@ -119,7 +135,7 @@ export default {};
     width: 15vw;
     height: 4vw;
     background-color: rgb(70, 76, 88);
-    margin-top: 10vw;
+    margin-top: 8vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .bqfont {
@@ -134,12 +150,21 @@ export default {};
     line-height: 4vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
 }
+
 .picbox {
     float: left;
     width: 30%;
-    height: 22vw;
+    height: 14vw;
     margin-left: 3%;
-    margin-top: 19vw;
+    /* margin-top: 19vw; */
+}
+.left{
+    margin-left: 10vw;
+}
+.mainbox{
+    width: 100%;
+    height: 100%;
+    margin-top: 17vw;
 }
 .pic1 {
     width: 10vw;
@@ -149,12 +174,16 @@ export default {};
     border-radius: 50%;
     border: 0.3vw solid rgb(70, 76, 88);
     margin: 0 auto;
+    overflow: hidden;
 }
 .name {
     margin-top: 0.7vw;
     font-size: 1.7vw;
     font-weight: 600;
     color: rgb(95, 177, 159);
+    letter-spacing: .5vw;
+    text-align: center;
+    margin-left: .3vw;
 }
 .jieshao {
     width: 80%;

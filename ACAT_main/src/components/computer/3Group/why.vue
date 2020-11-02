@@ -5,28 +5,10 @@
             这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里
         </div>
         <div class="groups">
-            <div class="qd" @mouseenter="mousein(1)" @click="jump(1)" ref="id1">
-                前端
-            </div>
-            <div
-                class="fwd"
-                @mouseenter="mousein(2)"
-                @click="jump(2)"
-                ref="id2"
-            >
-                服务端
-            </div>
-            <div class="ht" @mouseenter="mousein(3)" @click="jump(3)" ref="id3">
-                后台
-            </div>
-            <div
-                class="jqxx"
-                @mouseenter="mousein(4)"
-                @click="jump(4)"
-                ref="id4"
-            >
-                机器学习
-            </div>
+            <div class="qd" @click="jump(1)" ref="id1">前端</div>
+            <div class="fwd" @click="jump(2)" ref="id2">服务端</div>
+            <div class="ht" @click="jump(3)" ref="id3">后台</div>
+            <div class="jqxx" @click="jump(4)" ref="id4">机器学习</div>
         </div>
         <ul class="lang">
             <li class="lang-1"></li>
@@ -37,16 +19,23 @@
 </template>
 
 <script>
+import store from "@/vuex/store"
+import {mapMutations} from "vuex"
 export default {
     data() {
         return {};
     },
     methods: {
-        mousein(value) {},
         jump(value) {
             this.$emit("pagevalue", value + 1);
+            if(value == 3){
+                this.groupChange('open')
+            }
         },
+        ...mapMutations(['groupChange'])
     },
+    store,
+
 };
 </script>
 
@@ -61,7 +50,7 @@ export default {
     color: rgb(86, 158, 142);
     font-size: 2vw;
     margin-top: 13vw;
-    margin-left: 6vw;
+    margin-left: 7vw;
     font-weight: 600;
 }
 .fonts {
@@ -74,7 +63,7 @@ export default {
     color: rgb(70, 76, 88);
     text-indent: 3vw;
     line-height: 2.8vw;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.1vw;
     text-align: left;
 }
 .groups {

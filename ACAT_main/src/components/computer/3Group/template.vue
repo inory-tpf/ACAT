@@ -50,6 +50,7 @@ export default {
         switch(value) {
             this.msg2 = ''
             this.msg2 = this.msg[value];
+            this.opts.page = 0
             this.changepage()
         },
     },

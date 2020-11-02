@@ -28,7 +28,7 @@ export default {
     },
     watch:{
         'page'(value){
-            this.ownpage = this.page
+            this.ownpage = value
         }
     }
 }
