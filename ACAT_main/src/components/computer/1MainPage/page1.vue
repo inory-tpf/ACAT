@@ -1,6 +1,7 @@
 <template>
     <div class="main">
         <show></show>
+        <Nav v-show="nav"></Nav>
         <!-- <animation1></animation1> -->
         <div class="pic" ref="scroll"></div>
         <div class="part1">
@@ -32,20 +33,29 @@ import Acatmap from "@/components/computer/1MainPage/map";
 import group from "@/components/computer/1MainPage/group";
 import jianjie from "./jianjie";
 import show from "./show"
+import Nav from "../public/nav_2"
 export default {
     name: "page",
     data() {
-        return {};
+        return {
+            nav : false
+        };
     },
     methods: {
-        picscroll() {
+        picscroll:function() {
             this.$refs.scroll.style.marginTop =
                 -window.pageYOffset * 0.1 + "px";
         },
-        scroll() {
+        scroll:function() {
             this.picscroll();
             let vw = document.body.clientWidth / 100;
             let percent = window.pageYOffset / vw;
+            if(percent >= 30){
+                this.nav = true
+            }
+            else{
+                this.nav = false
+            }
             if (percent >= 30 && percent <= 70) {
                 this.$refs.animation1.show();
             }else{
@@ -71,6 +81,7 @@ export default {
         group,
         jianjie,
         show,
+        Nav
     },
     mounted() {
         document.addEventListener("scroll", this.scroll, true);
@@ -80,7 +91,6 @@ export default {
         document.removeEventListener("scroll", this.scroll, true);
         next();
     },
-    watch: {},
 };
 </script>
 

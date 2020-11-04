@@ -41,12 +41,13 @@ export default {
                         "&nbsp&nbsp&nbsp&nbspWeb前端开发从网页制作演变而来，网站的前端开发是创建Web页面，或app等前端界面呈现给用户的过程，早期网站主要内容都是静态，以图片和文字为主；现在的前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript/ajax，最新的高级版本HTML5、CSS3，以及SVG等。",
                     font2: `&nbsp&nbsp&nbsp&nbsp现如今的前端技术栈不断丰富，功能也日益强大</br>1，切图做页面</br>2，写 JS 做交互和功能</br>3，写 NodeJS 程序，部署服务器，抓站搞 api 等</br>4.开发跨平台的桌面端的应用程序与无需安装的快应用</br>5，使用 Vue、React Native 、HTML5 开发移动端 APP`,
                     font3:
-                        "&nbsp&nbsp&nbsp&nbsp近些年来，前端随着互联网的火热逐渐发展，现在已经拥有了较为成熟的技术栈，各大公司对前端工程师的需求也是与日俱增。<br/>不仅如此，前端不断更新迭代的技术不断地为其注入新的血液。",
-                    pic1: require("../../../assets/img/组别/前端/劈柴.jpg"),
-                    pic2_1: require("../../../assets/img/组别/前端/pic5.jpg"),
-                    pic2_2: require("../../../assets/img/组别/前端/pic6.png"),
-                    pic2_3: require("../../../assets/img/组别/前端/pic2.jpg"),
-                    pic3_1: require("../../../assets/img/组别/前端/pic2.jpg"),
+                        "&nbsp&nbsp&nbsp&nbsp近些年来，前端随着互联网的火热逐渐发展，现在已经拥有了较为成熟的技术栈，各大公司对前端工程师的需求也是与日俱增。<br/>&nbsp&nbsp&nbsp&nbsp不仅如此，前端不断更新迭代的技术不断地为其注入新的血液。前端正处于蒸蒸日上的发展期。",
+                    pic1: require("../../../assets/img/组别/前端/首页.jpg"),
+                    pic2_1: require("../../../assets/img/组别/前端/能做什么1.jpg"),
+                    pic2_2: require("../../../assets/img/组别/前端/能做什么2.png"),
+                    pic2_3: require("../../../assets/img/组别/前端/能做什么1.jpg"),
+                    pic3_1: require("../../../assets/img/组别/前端/发展前景1.jpg"),
+                    pic3_2: require("../../../assets/img/组别/前端/发展前景2.png"),
                 },
                 fwd: {
                     id: 2,
@@ -58,12 +59,12 @@ export default {
                         "&nbsp&nbsp&nbsp&nbsp作为实验室的服务端组，掌管着实验室唯二的服务器，在日常可以用这两个服务器进行学习，搭载一些写好的项目和工具。在日常学习中可以学着怎么实现http服务器等。",
                     font3:
                         "&nbsp&nbsp&nbsp&nbsp现在各种各样的云服务(阿里云，腾讯云等)的出现，许多大厂对于服务端岗位有着大量需求，docker，k8s容器云的出现使许多应用程序运行在容器中，需要更多的服务端从业人员。",
-                    pic1: require("../../../assets/img/组别/服务端/pic1.png"),
-                    pic2_1: require("../../../assets/img/组别/服务端/能做什么（1）.jpg"),
-                    pic2_2: require("../../../assets/img/组别/服务端/能做什么(2).jpg"),
-                    pic2_3: require("../../../assets/img/组别/服务端/能做什么(3).jpg"),
-                    pic3_1: require("../../../assets/img/组别/服务端/发展前景(1).png"),
-                    pic3_2: require("../../../assets/img/组别/服务端/发展前景(2).jpg"),
+                    pic1: require("../../../assets/img/组别/服务端/首页.png"),
+                    pic2_1: require("../../../assets/img/组别/服务端/能做什么1.jpg"),
+                    pic2_2: require("../../../assets/img/组别/服务端/能做什么2.jpg"),
+                    pic2_3: require("../../../assets/img/组别/服务端/能做什么3.jpg"),
+                    pic3_1: require("../../../assets/img/组别/服务端/发展前景1.png"),
+                    pic3_2: require("../../../assets/img/组别/服务端/发展前景2.jpg"),
                 },
 
                 ht: {
@@ -77,12 +78,12 @@ export default {
                             "1.Web开发</br>&nbsp&nbsp&nbsp&nbspJava在开发高访问、高并发、集群化的大型网站方面有很大的优势，例如淘宝、美团等。<br>2.Android开发</br>&nbsp&nbsp&nbsp&nbspAndroid应用的主要开发语言就是Java。Android发展非常快速，优秀的Android开发工程师仍然存在不小的缺口。<br>3.客户端开发</br>&nbsp&nbsp&nbsp&nbspJava客户端开发主要面向政府和大型企业",
                         font3:
                             "5G技术已经进入人们的视野并且逐渐落地，随之而来的将是万物互联的时代。物联网产业的飞速发展，将带动大数据、云计算、人工智能等领域的蓬勃发展。作为多年坐稳第一编程语言的Java, 以其功能强大、简单易用、安全稳健等特性，让它在这些领域都是风生水起。",
-                        pic1: require("../../../assets/img/组别/后台/java/pic2.jpg"),
-                        pic2_1: require("../../../assets/img/组别/后台/java/pic3.jpg"),
-                        pic2_2: require("../../../assets/img/组别/后台/java/pic4.jpg"),
-                        pic2_3: require("../../../assets/img/组别/后台/java/pic5.jpg"),
-                        pic3_1: require("../../../assets/img/组别/后台/java/pic7.jpg"),
-                        pic3_2: require("../../../assets/img/组别/后台/java/pic6.jpg"),
+                        pic1: require("../../../assets/img/组别/后台/java/首页.jpg"),
+                        pic2_1: require("../../../assets/img/组别/后台/java/能做什么1.jpg"),
+                        pic2_2: require("../../../assets/img/组别/后台/java/能做什么2.jpg"),
+                        pic2_3: require("../../../assets/img/组别/后台/java/能做什么3.jpg"),
+                        pic3_1: require("../../../assets/img/组别/后台/java/发展前景1.jpg"),
+                        pic3_2: require("../../../assets/img/组别/后台/java/发展前景2.jpg"),
                     },
                     go: {
                         title1: "GO",
@@ -98,11 +99,11 @@ export default {
                                 &nbsp&nbsp&nbsp&nbspCDN的调度系统，分发系统，监控系统，短域名服务，CDN内部开放平台，运营报表系统以及其他一些小工具等。`,
                         font3: ` &nbsp&nbsp&nbsp&nbspgolang作为一个自带高并发支持的语言。拥有着众多社区支持，可以在讨论中进步；优秀的开源项目，让你开源借鉴别人的优秀的代码操作；同时在微服务和区块链技术上有着和其他语言所不及的优势。可见其有着良好的学习的环境和未来发展道路。`,
                         pic1: require("../../../assets/img/组别/后台/go/首页.png"),
-                        pic2_1: require("../../../assets/img/组别/后台/go/做什么.jpg"),
-                        pic2_2: require("../../../assets/img/组别/后台/go/做什么 (2).jpg"),
-                        pic2_3: require("../../../assets/img/组别/后台/go/做什么 (3).jpg"),
-                        pic3_1: require("../../../assets/img/组别/后台/go/发展前景.jpg"),
-                        pic3_2: require("../../../assets/img/组别/后台/java/pic6.jpg"),
+                        pic2_1: require("../../../assets/img/组别/后台/go/能做什么1.jpg"),
+                        pic2_2: require("../../../assets/img/组别/后台/go/能做什么2.jpg"),
+                        pic2_3: require("../../../assets/img/组别/后台/go/能做什么3.jpg"),
+                        pic3_1: require("../../../assets/img/组别/后台/go/发展前景1.jpg"),
+                        pic3_2: require("../../../assets/img/组别/后台/java/发展前景2.jpg"),
                     },
                 },
                 jqxx: {
@@ -121,12 +122,12 @@ export default {
                     2、现在每一家公司都可以接触智能算法</br>
                     3、现在每一个应用程序都可以是一个智能应用程序</br>
                     &nbsp&nbsp&nbsp&nbsp机器学习发展前景非常广阔，就业机会也会随着时间的演进逐步增多</br>`,
-                    pic1: require("../../../assets/img/组别/机器学习/图片2.png"),
-                    pic2_1: require("../../../assets/img/组别/机器学习/图片3.png"),
-                    pic2_2: require("../../../assets/img/组别/机器学习/图片4.png"),
-                    pic2_3: require("../../../assets/img/组别/机器学习/图片5.png"),
-                    pic3_1: require("../../../assets/img/组别/机器学习/图片7.png"),
-                    pic3_2: require("../../../assets/img/组别/机器学习/图片6.png"),
+                    pic1: require("../../../assets/img/组别/机器学习/首页.png"),
+                    pic2_1: require("../../../assets/img/组别/机器学习/能做什么1.png"),
+                    pic2_2: require("../../../assets/img/组别/机器学习/能做什么2.png"),
+                    pic2_3: require("../../../assets/img/组别/机器学习/能做什么3.jpg"),
+                    pic3_1: require("../../../assets/img/组别/机器学习/发展前景1.png"),
+                    pic3_2: require("../../../assets/img/组别/机器学习/发展前景2.png"),
                 },
             },
         };
@@ -175,6 +176,7 @@ export default {
 </script>
 <style scoped>
 .main {
+    position: absolute;
     width: 100%;
     height: 100%;
 }

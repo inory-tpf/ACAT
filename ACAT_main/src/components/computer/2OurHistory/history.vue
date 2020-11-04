@@ -6,27 +6,27 @@
             </div>
             <div class="mainbox">
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/图片1.png"/></div>
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/余俊.png"/></div>
                     <div class="name">余俊</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic2.png"/></div>
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/李培.png"/></div>
                     <div class="name">李培</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic3.png"/></div>
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/白琳.png"/></div>
                     <div class="name">白琳</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox left">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/pic4.png"/></div>
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/牛晓晨.png"/></div>
                     <div class="name">牛晓晨</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/微信图片_20201102194347副本.png"/></div>
+                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/孙家泽.png"/></div>
                     <div class="name">孙家泽</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
@@ -97,7 +97,7 @@ export default {};
 .head-pic {
     width: 100%;
     height: 100%;
-    background-image: url("../../../assets/img/了解我们/简介.png");
+    background-image: url("../../../assets/img/了解我们/简介.jpg");
     background-size: 100% auto;
     background-position: 0 45%;
     margin-left: 6%;

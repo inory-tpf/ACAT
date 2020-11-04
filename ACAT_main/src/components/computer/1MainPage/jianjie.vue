@@ -24,8 +24,8 @@ export default {
     },
     methods: {
         show() {
-            this.$refs.b1.style.height = "10vw";
-            this.$refs.b3.style.height = "10vw";
+            this.$refs.b1.style.height = "9vw";
+            this.$refs.b3.style.height = "9vw";
             this.$refs.b2.style.width = "25vw";
             this.$refs.b4.style.width = "25vw";
         },
@@ -87,7 +87,7 @@ export default {
 .border4 {
     position: absolute;
     width: 0.2vw;
-    height: 10vw;
+    height: 9vw;
     background-color: rgb(60, 66, 78);
     margin-left: 7vw;
     margin-top: 5vw;
@@ -104,10 +104,10 @@ export default {
 }
 .border3 {
     margin-left: 92vw;
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 .border4 {
-    margin-top: 19vw;
+    margin-top: 15vw;
     margin-left: 65vw;
 }
 .logo {

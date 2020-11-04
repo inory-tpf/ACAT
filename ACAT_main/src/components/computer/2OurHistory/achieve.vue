@@ -101,7 +101,7 @@ export default {
     width: 90%;
     height: 15vw;
     border: 0.3vw solid #464c58;
-    background-image: url("../../../assets/img/test/IMG_20191020_205855.jpg");
+    background-image: url("");
     background-size: 100% auto;
     margin-top: 0.5vw;
 }
@@ -112,7 +112,7 @@ export default {
     height: 12vw;
     background-color: rgb(95, 177, 159);
     border: 0.3vw solid #464c58;
-    background-image: url("../../../assets/img/了解我们/荣誉.png");
+    background-image: url("../../../assets/img/了解我们/荣誉.jpg");
     background-size: 100% auto;
     background-position: 0 -2.5vw;
 }

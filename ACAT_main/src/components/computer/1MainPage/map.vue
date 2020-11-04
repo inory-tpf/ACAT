@@ -12,7 +12,7 @@
                 <div class="logo2"></div>
                 <div class="name">计算机应用技术协会</div>
                 <div class="place">地点：西区图书馆一楼</div>
-                <div class="fonts">纳新群号：88888888</div>
+                <div class="fonts">纳新群号(QQ)：184141080</div>
                 <div class="fonts">微信公众号：ACAT实验室</div>
                 <div class="qq_erwei"></div>
                 <div class="wx_erwei"></div>
