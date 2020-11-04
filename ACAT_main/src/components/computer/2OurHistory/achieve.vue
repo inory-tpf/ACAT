@@ -67,7 +67,7 @@ export default {
 .cyfont {
     width: 15vw;
     height: 3vw;
-    margin-top: 9vw;
+    margin-top:20vh;
     color: rgb(95, 177, 159);
     font-weight: 600;
     font-size: 2vw;

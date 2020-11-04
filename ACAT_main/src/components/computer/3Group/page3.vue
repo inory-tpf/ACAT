@@ -1,7 +1,7 @@
 <template>
     <div class="main">
-        <nav_2></nav_2>
         <div class="pages">
+            <nav_2></nav_2>
             <lineNav @msg="moveto" ref="linenav"></lineNav>
             <div class="page" :id="5" ref="id5">
                 <muban ref="move4" :msg="msg.jqxx"></muban>
@@ -176,9 +176,8 @@ export default {
 </script>
 <style scoped>
 .main {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .pages {
     width: 100%;

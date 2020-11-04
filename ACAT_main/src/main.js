@@ -5,6 +5,9 @@ import App from './computer'
 import router from './router'
 import moble from './moble'
 
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
 import 'animate.css'
 import 'fullpage-vue/src/fullpage.css'
 import VueFullpage from 'fullpage-vue'

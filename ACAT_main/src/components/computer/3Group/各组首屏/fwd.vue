@@ -5,17 +5,22 @@
           <div class="bigfonts2">{{msg.title2}}</div>
       </div>
       <div class="back"></div>
+      <remin></remin>
   </div>
 </template>
 
 <script>
+import remin from "../../public/remin"
 export default {
     data() {
         return {
         
         }
     },
-    props:['msg']
+    props:['msg'],
+    components:{
+        remin
+    }
 }
 </script>
 

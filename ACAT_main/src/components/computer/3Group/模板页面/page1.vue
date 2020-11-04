@@ -34,7 +34,7 @@ export default {
     width: 25vw;
     height: 33vw;
     background-color:  rgb(95, 177, 159);
-    margin-top: 9vw;
+    margin-top: 19vh;
     margin-left: 15vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
   }
@@ -55,7 +55,7 @@ export default {
     width: 40vw;
     height: 30vw;
     margin-left: 50vw;
-    margin-top: 15vw;
+    margin-top: 27vh;
     color:   rgb(70, 76, 88);
     font-size: 1.6vw;
   }

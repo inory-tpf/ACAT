@@ -135,7 +135,7 @@ img{
     width: 15vw;
     height: 4vw;
     background-color: rgb(70, 76, 88);
-    margin-top: 8vw;
+    margin-top: 15vh;
     box-shadow: 0 0 15px rgb(70, 70, 70);
 }
 .bqfont {
@@ -164,7 +164,7 @@ img{
 .mainbox{
     width: 100%;
     height: 100%;
-    margin-top: 17vw;
+    margin-top: 35vh;
 }
 .pic1 {
     width: 10vw;

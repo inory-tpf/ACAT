@@ -37,5 +37,5 @@ export default {
     height: 100%;
     background-color: #ccc;
 }
-    
+
 </style>

@@ -49,7 +49,7 @@ export default {
     height: 5vw;
     color: rgb(86, 158, 142);
     font-size: 2vw;
-    margin-top: 13vw;
+    margin-top: 27vh;
     margin-left: 7vw;
     font-weight: 600;
 }
@@ -57,7 +57,7 @@ export default {
     float: left;
     width: 50%;
     height: 30vw;
-    margin-top: 19vw;
+    margin-top: 40vh;
     margin-left: 8%;
     font-size: 1.75vw;
     color: rgb(70, 76, 88);
@@ -89,6 +89,7 @@ export default {
     cursor: pointer;
     animation: qd 10s ease-in-out infinite;
     transition: 0.3s ease-in-out;
+    z-index: 999;
 }
 @keyframes qd {
     0% {
@@ -138,6 +139,7 @@ export default {
     bottom: 0;
     padding: 0;
     margin: 0;
+    z-index: 999;
 }
 .lang-1,
 .lang-2,

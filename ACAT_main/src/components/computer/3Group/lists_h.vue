@@ -59,6 +59,7 @@ export default {
         border: .15vw solid rgb(60, 66, 78);
         margin-left: 1.3vw;
         margin-top: 1vw;
+        cursor: pointer;
     }
     .active{
         background-color: rgb(60,66,78);

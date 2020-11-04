@@ -31,7 +31,7 @@ export default {
     width: 40vw;
     height: 30vw;
     margin-left: 10vw;
-    margin-top: 13vw;
+    margin-top: 20vh;
     color: rgb(70, 76, 88);
     font-size: 1.6vw;
 }
@@ -66,11 +66,11 @@ export default {
 .loop {
     position: relative;
     width: 40vw;
-    height: 45vw;
+    height: 90vh;
     /* transform: rotateZ(-25deg); */
     margin-left: 60vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
-    margin-top: 5vw;
+    margin-top: 10vh;
     padding: 0;
 }
 img {

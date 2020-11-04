@@ -37,7 +37,7 @@ export default {
     width: 40vw;
     height: 30vw;
     margin-left: 10vw;
-    margin-top: 15vw;
+    margin-top: 27vh;
     color: rgb(70, 76, 88);
     font-size: 1.6vw;
 }
@@ -62,7 +62,7 @@ export default {
     width: 40vw;
     height: 40vw;
     margin-left: 4vw;
-    margin-top: 6vw;
+    margin-top:12vh;
 }
 .pic1,
 .pic2,

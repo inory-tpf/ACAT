@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="main2">
         <div class="nav">
             <div class="logo" @click="tp(0)"></div>
             <ul class="nav-list">
@@ -47,7 +47,7 @@ export default {
 };
 </script>
 <style scoped>
-.main {
+.main2{
     position: fixed;
     width: 100%;
     height: 5vw;
