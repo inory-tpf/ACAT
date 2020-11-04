@@ -40,7 +40,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 9999;
     transition: .5s linear;
     background-color: rgb(235, 238, 238);
 }

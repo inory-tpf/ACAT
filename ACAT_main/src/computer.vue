@@ -15,11 +15,6 @@ export default {
             isRouterAlive: true,
         };
     },
-    provide() {
-        return {
-            reload: this.reload,
-        };
-    },
     watch: {
         $route(to, from) {
             //如果to索引大于from索引,判断为前进状态,反之则为后退状态
@@ -33,14 +28,6 @@ export default {
     },
     created() {
         document.body.removeChild(document.getElementById("Loading")); // 加载页面完后移除加载动画
-    },
-    methods: {
-        reload() {
-            this.isRouterAlive = false;
-            this.$nextTick(function () {
-                this.isRouterAlive = true;
-            });
-        },
     },
 };
 </script>

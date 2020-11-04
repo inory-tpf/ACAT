@@ -5,31 +5,29 @@
             <ul class="nav-list">
                 <li class="item" @click="tp(1)">了解我们</li>
                 <li class="item" @click="tp(2)">组别介绍</li>
-                <li class="item" @click="tp(3)">博客</li>
-                <li class="item" @click="tp(4)">加入我们</li>
+                <li class="item" @click="tp(3)" v-if="blog">博客</li>
+                <li class="item" @click="tp(4)" v-if="joinUs">加入我们</li>
             </ul>
         </div>
     </div>
 </template>
 <script>
+import store from "../../../vuex/store"
+import {mapState} from "vuex"
 export default {
     data() {
         return {};
     },
-    inject: ["reload"],
     methods: {
         tp(num) {
             if (num === 0) {
                 this.$router.replace("/");
-                // this.reload();
             }
             if (num === 1) {
                 this.$router.replace("/history");
-                // this.reload();
             }
             if (num === 2) {
                 this.$router.replace("/group");
-                // this.reload();
             }
             if (num === 3) {
                 //跳转至博客
@@ -39,6 +37,10 @@ export default {
             }
         },
     },
+    store,
+    computed: {
+        ...mapState(['blog' , 'joinUs'])
+    },  
     beforeRouteLeave(to, from, next) {
         // ...
         document.removeEventListener("scroll", this.scroll, true);

@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="main2">
             <ul class="nav_line">
                 <li @click="moveto(0)" class="item1" :class="{'active':ownpage==0}"></li>
                 <li class="item" @click="moveto(1)" :class="{'active':ownpage==1}"></li>
@@ -34,13 +34,13 @@ export default {
 }
 </script>
 <style scoped>
-    .main{
+    .main2{
         position: absolute;
         width: 10vw;
         height: 3vw;
         left: 50%;
         margin-left: -5vw;
-        z-index: 99;
+        z-index: 9999;
         bottom: 0;
     }
     .nav_line{

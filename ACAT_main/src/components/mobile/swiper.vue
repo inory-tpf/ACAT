@@ -167,12 +167,12 @@
               <div class="joinUs-name">计算机应用技术协会</div>
               <div class="joinUs-desc">
                 <p>地点：西区图书馆一楼</p>
-                <p>纳新群号：172566</p>
+                <p>纳新群号：{{QQ_number}}</p>
                 <p>微信公众号：ACAT实验室</p>
               </div>
               <div class="code-img-wrapper">
                 <img
-                  src="../../assets/mobile/20201010222206.jpg"
+                  src="../../assets/img/联系我们/qq纳新二维码.jpg"
                   width="40%"
                   height="auto"
                 />
@@ -192,7 +192,8 @@
 
 <script>
 import "swiper/swiper-bundle.css";
-
+import store from "../../vuex/store"
+import {mapState} from "vuex"
 export default {
   data() {
     return {
@@ -312,6 +313,10 @@ export default {
       });
     },
   },
+  store,
+  computed:{
+    ...mapState(['QQ_number'])
+  }
 };
 </script>
 

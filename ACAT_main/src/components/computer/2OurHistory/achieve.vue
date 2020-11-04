@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <div class="left">
+        <div class="left" :class="{ active: animation }">
             <div class="label-fonts">实验室主要成果</div>
             <div class="achpic1"></div>
             <div class="achname">学校选课系统</div>
@@ -9,14 +9,14 @@
             </div>
         </div>
         <div class="right">
-            <div class="rongyu">
+            <div class="rongyu" :class="{ active2: animation }">
                 <div class="ryfont">实验室获得荣誉</div>
                 <div class="rypic"></div>
                 <div class="ryfonts">
                     协会成员共参与校级开放实验3项、院级开放实验6项；申报了10项大学生创新创业训练计划项目，其中4项获批为国家级、6项获批为省级；教师申报教改和科研项目7项，带领学生组队在多项科技竞赛中获得了优异的成绩。
                 </div>
             </div>
-            <div class="chengyuan">
+            <div class="chengyuan" :class="{ active3: animation }">
                 <div class="cyfont">实验室成员</div>
                 <div class="cypic"></div>
                 <div class="cyfonts">
@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             x: 0,
+            animation: false,
         };
     },
     methods: {
@@ -41,6 +42,17 @@ export default {
         //     this.$refs.pic.style.marginLeft = 2 + 0.0007 * e.clientX + "vw";
         //     this.$refs.pic.style.marginTop = 2 + 0.0007 * e.clientY + "vw";
         // },
+    },
+    props: ["page"],
+    watch: {
+        page: function (value) {
+            if (value == 1) {
+                this.animation = true;
+            }
+            // else{
+            //     this.animation = false
+            // }
+        },
     },
 };
 </script>
@@ -55,6 +67,11 @@ export default {
     width: 30%;
     height: 100%;
     margin-left: 10vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.active {
+    opacity: 1;
 }
 .right {
     float: left;
@@ -67,7 +84,7 @@ export default {
 .cyfont {
     width: 15vw;
     height: 3vw;
-    margin-top:20vh;
+    margin-top: 20vh;
     color: rgb(95, 177, 159);
     font-weight: 600;
     font-size: 2vw;
@@ -87,7 +104,6 @@ export default {
     font-size: 1.5vw;
     font-weight: 400;
     text-align: left;
-
     text-indent: 3vw;
 }
 .ryfonts {
@@ -121,7 +137,7 @@ export default {
     height: 12vw;
     background-image: url("../../../assets/img/logo/pic.png");
     background-size: 100% auto;
-    background-position: 0 0 ;
+    background-position: 0 0;
 }
 .achname {
     width: 100%;
@@ -143,6 +159,19 @@ export default {
     text-indent: 3vw;
     margin-top: 0.5vw;
 }
+.rongyu,
+.chengyuan {
+    opacity: 0;
+    transition: 0.5s 0.3s ease-in-out;
+}
+.chengyuan {
+    transition: 0.5s 0.6s ease-in-out;
+}
+.active2,
+.active3 {
+    opacity: 1;
+}
+
 /* .box1 {
     position: absolute;
     width: 10vw;

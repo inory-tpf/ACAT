@@ -2,40 +2,62 @@
     <div class="main">
         <div class="pic-block">
             <div class="biaoqian">
-                <div class="bqfont">实验室指导老师</div>
+                <div class="bqfont" :class="{ active: animation }">
+                    实验室指导老师
+                </div>
             </div>
-            <div class="mainbox">
+            <div class="mainbox"  :class="{ active2: animation }">
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/余俊.png"/></div>
+                    <div class="pic1">
+                        <img
+                            src="../../../assets/img/了解我们/指导老师/余俊.png"
+                        />
+                    </div>
                     <div class="name">余俊</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/李培.png"/></div>
+                    <div class="pic1">
+                        <img
+                            src="../../../assets/img/了解我们/指导老师/李培.png"
+                        />
+                    </div>
                     <div class="name">李培</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/白琳.png"/></div>
+                    <div class="pic1">
+                        <img
+                            src="../../../assets/img/了解我们/指导老师/白琳.png"
+                        />
+                    </div>
                     <div class="name">白琳</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox left">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/牛晓晨.png"/></div>
+                    <div class="pic1">
+                        <img
+                            src="../../../assets/img/了解我们/指导老师/牛晓晨.png"
+                        />
+                    </div>
                     <div class="name">牛晓晨</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
                 <div class="picbox">
-                    <div class="pic1"><img src="../../../assets/img/了解我们/指导老师/孙家泽.png"/></div>
+                    <div class="pic1">
+                        <img
+                            src="../../../assets/img/了解我们/指导老师/孙家泽.png"
+                        />
+                    </div>
                     <div class="name">孙家泽</div>
                     <!-- <div class="jieshao">这里是文字这里是文字这里是文字</div> -->
                 </div>
             </div>
         </div>
-        <div class="fonts-block">
+        <div class="fonts-block" :class="{ active4: animation }">
             <div class="line1"></div>
             <div class="line2"></div>
-            <div class="block">
+            <div class="block" :class="{ active3: animation }">
                 <div class="head">
                     <div class="head-pic"></div>
                 </div>
@@ -51,7 +73,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            animation: false,
+        };
+    },
+    mounted() {
+        setTimeout(() => {
+            this.animation = true;
+        }, 200);
+    },
+};
 </script>
 
 <style scoped>
@@ -65,6 +98,11 @@ export default {};
     width: 30%;
     height: 50vw;
     margin-left: 4vw;
+    opacity: 0;
+    transition: .5s .8s ease-in-out;
+}
+.active4{
+    opacity: 1;
 }
 .line1,
 .line2 {
@@ -79,12 +117,18 @@ export default {};
     margin-left: 20vw;
 }
 .block {
+    position: absolute;
     width: 30vw;
     height: 41vw;
     background-color: rgb(70, 76, 88);
-    margin-top: 7vw;
+    margin-top: 0vw;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(70, 70, 70);
+    transition: .5s .8s ease-in-out;
+    z-index: 99;
+}
+.active3{
+    margin-top: 7vw;
 }
 .head {
     float: left;
@@ -120,9 +164,9 @@ export default {};
     box-shadow: 0 0 15px rgb(70, 70, 70);
     opacity: 0.9;
 }
-img{
+img {
     width: 100%;
-    height:auto
+    height: auto;
 }
 .pic-block {
     float: left;
@@ -142,15 +186,17 @@ img{
     width: 100%;
     height: 100%;
     background-color: rgb(95, 177, 159);
-    margin-top: 1vw;
-    margin-left: 1vw;
     color: #fff;
     font-size: 1.7vw;
     font-weight: 600;
     line-height: 4vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
+    transition: .5s ease-in-out;
 }
-
+.active {
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
 .picbox {
     float: left;
     width: 30%;
@@ -158,13 +204,18 @@ img{
     margin-left: 3%;
     /* margin-top: 19vw; */
 }
-.left{
+.left {
     margin-left: 10vw;
 }
-.mainbox{
+.mainbox {
     width: 100%;
     height: 100%;
     margin-top: 35vh;
+    transition:  .5s .4s ease-in-out;
+    opacity: 0;
+}
+.active2{
+    opacity: 1;
 }
 .pic1 {
     width: 10vw;
@@ -181,9 +232,9 @@ img{
     font-size: 1.7vw;
     font-weight: 600;
     color: rgb(95, 177, 159);
-    letter-spacing: .5vw;
+    letter-spacing: 0.5vw;
     text-align: center;
-    margin-left: .3vw;
+    margin-left: 0.3vw;
 }
 .jieshao {
     width: 80%;

@@ -6,8 +6,8 @@
             <ul class="nav-list">
                 <li class="item" @click="tp(1)">了解我们</li>
                 <li class="item" @click="tp(2)">组别介绍</li>
-                <li class="item" @click="tp(3)">博客</li>
-                <li class="item" @click="tp(4)" v-if="nx">加入我们</li>
+                <li class="item" @click="tp(3)" v-if="blog">博客</li>
+                <li class="item" @click="tp(4)" v-if="joinUs">加入我们</li>
             </ul>
         </div>
         <loop></loop>
@@ -19,13 +19,12 @@
 </template>
 <script>
 import loop from "./loop";
+import store from "../../../vuex/store"
+import {mapState} from "vuex"
 export default {
     name: "nav_1",
     data() {
-        return {
-            //true显示纳新接口 false隐藏纳新接口
-            nx: true,
-        };
+        return {};
     },
     components: {
         loop,
@@ -45,6 +44,10 @@ export default {
                 //跳转至纳新界面
             }
         },
+    },
+    store,
+    computed: {
+        ...mapState(['blog' , 'joinUs'])
     },
 };
 </script>
@@ -94,7 +97,7 @@ export default {
     color: rgb(255, 255, 255);
     font-weight: 600;
     transition: 0.5s ease-in-out;
-    opacity: .85;
+    opacity: 0.85;
 }
 .item:hover {
     opacity: 1;
@@ -108,7 +111,6 @@ export default {
     margin-left: 27vw;
     margin-top: 8vw;
     z-index: 999;
-    
 }
 .font1 {
     width: 35vw;
@@ -121,7 +123,7 @@ export default {
     line-height: 7vw;
     margin-top: 8vw;
     letter-spacing: 0.2vw;
-    opacity: .9;
+    opacity: 0.9;
 }
 .font2 {
     width: 33vw;
@@ -132,6 +134,6 @@ export default {
     line-height: 4vw;
     margin-top: 1.6vw;
     font-size: 1.3vw;
-    opacity: .6;
+    opacity: 0.6;
 }
 </style>

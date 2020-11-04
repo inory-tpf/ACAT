@@ -124,7 +124,7 @@ export default {
     height: 5vw;
     background-image: url("../../../assets/img/logo/text.png");
     background-size: 100% auto;
-    margin-top: 17vw;
+    margin-top: 15vw;
     margin-left: 3vw;
 }
 </style>

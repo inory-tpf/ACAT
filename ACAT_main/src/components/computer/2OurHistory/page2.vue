@@ -8,13 +8,13 @@
     <div class="fullpage-container">
       <div class="fullpage-wp" v-fullpage="opts" ref="example">
         <div class="page color">
-          <history></history>
+          <history :page = "opts.page"></history>
         </div>
         <div class="page color">
-          <achieve></achieve>
+          <achieve :page = "opts.page"></achieve>
         </div>
         <div class="page color">
-          <env></env>
+          <env :page = "opts.page"></env>
         </div>
       </div>
     </div>
@@ -34,9 +34,12 @@ export default {
         dir: "v",
         duration: 200,
         page: 0,
+        // ach_status:false,
+        // evn_status:false,
         beforeChange: function (prev, next) {},
         afterChange: function (prev, next) {
           this.opts.page = next;
+          
         },
       },
       page: 0,
