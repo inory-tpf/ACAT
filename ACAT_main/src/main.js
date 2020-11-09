@@ -17,7 +17,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 var res = window.innerWidth
-if(res < 786){
+if (res < 786) {
   //移动端
   new Vue({
     el: '#app',
@@ -25,8 +25,8 @@ if(res < 786){
     components: { moble },
     template: '<moble/>'
   })
-  
-}else{
+
+} else {
   //电脑端
   new Vue({
     el: '#app',
@@ -34,5 +34,5 @@ if(res < 786){
     components: { App },
     template: '<App/>'
   })
-  
+
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="main" ref="mengban" :class="{'active':groupState=='false'}">
+    <div class="main" ref="mengban" :class="{ active: groupState == 'false' }">
         <div class="java" @click="submit('java')">
             <div class="mengban1" ref="mb1"></div>
         </div>
@@ -13,25 +13,24 @@
 </template>
 
 <script>
-import store from "@/vuex/store"
-import {mapState , mapMutations} from "vuex"
+import store from "@/vuex/store";
+import { mapState, mapMutations } from "vuex";
 export default {
     data() {
-        return {
-        };
+        return {};
     },
     methods: {
         submit(value) {
             this.$parent.switch(value);
-            this.groupChange('close')
+            this.groupChange("close");
         },
         pull() {
-            this.groupChange('open')
+            this.groupChange("open");
         },
-        ...mapMutations(['groupChange'])
+        ...mapMutations(["groupChange"]),
     },
     store,
-    computed:mapState(['groupState'])
+    computed: mapState(["groupState"]),
 };
 </script>
 
@@ -41,10 +40,10 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    transition: .5s linear;
+    transition: 0.5s linear;
     background-color: rgb(235, 238, 238);
 }
-.active{
+.active {
     margin-top: -100vh;
 }
 .java,
@@ -54,14 +53,14 @@ export default {
     width: 50vw;
     height: 100%;
     background-image: url("../../../assets/img/组别/后台/java/logo2.png");
-    background-size: auto 80%;
+    background-size: 50vw auto;
     background-repeat: no-repeat;
-    background-position: -2vw 5vw;
+    background-position: 0vw 7vw;
 }
 .go {
     background-image: url("../../../assets/img/组别/后台/go/logo.png");
     background-position: 0 15vw;
-    background-size: auto 50%;
+    background-size: 50vw auto;
 }
 .mengban1,
 .mengban2 {

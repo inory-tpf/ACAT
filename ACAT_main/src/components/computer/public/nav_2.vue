@@ -12,8 +12,8 @@
     </div>
 </template>
 <script>
-import store from "../../../vuex/store"
-import {mapState} from "vuex"
+import store from "../../../vuex/store";
+import { mapState } from "vuex";
 export default {
     data() {
         return {};
@@ -30,17 +30,19 @@ export default {
                 this.$router.replace("/group");
             }
             if (num === 3) {
+                window.open(this.blogLocation);
                 //跳转至博客
             }
             if (num === 4) {
+                window.open(this.joinUsLocation);
                 //跳转至纳新界面
             }
         },
     },
     store,
     computed: {
-        ...mapState(['blog' , 'joinUs'])
-    },  
+        ...mapState(["blog", "joinUs","blogLocation","joinUsLocation"]),
+    },
     beforeRouteLeave(to, from, next) {
         // ...
         document.removeEventListener("scroll", this.scroll, true);
@@ -49,7 +51,7 @@ export default {
 };
 </script>
 <style scoped>
-.main2{
+.main2 {
     position: fixed;
     width: 100%;
     height: 5vw;
@@ -62,7 +64,6 @@ export default {
     z-index: 999;
     background-color: rgb(70, 76, 88);
     box-shadow: 0 0 15px rgb(70, 70, 70);
-
 }
 .logo {
     width: 13%;

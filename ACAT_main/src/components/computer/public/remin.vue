@@ -1,32 +1,31 @@
 <template>
-  <div class="main2">
-      <div class="logo"></div>
-      <div class="fonts">滑动滚轮展示更多</div>
-  </div>
+    <div class="main2">
+        <div class="logo"></div>
+        <div class="fonts">滑动滚轮展示更多</div>
+    </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-.main2{
+.main2 {
     position: absolute;
     width: 30vw;
     height: 5vw;
-    bottom: 0;
+    bottom: -5vw;
     background-image: none;
+    transition: 1s 2s ease-in-out;
 }
-.logo{
+.logo {
     float: left;
     width: 5vw;
     height: 5vw;
     background-image: url("../../../assets/img/logo/pic.png");
     background-size: 100% 100%;
 }
-.fonts{
+.fonts {
     float: left;
     width: 45%;
     height: 5vw;

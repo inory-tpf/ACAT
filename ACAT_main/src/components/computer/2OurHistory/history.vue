@@ -202,7 +202,6 @@ img {
     width: 30%;
     height: 14vw;
     margin-left: 3%;
-    /* margin-top: 19vw; */
 }
 .left {
     margin-left: 10vw;

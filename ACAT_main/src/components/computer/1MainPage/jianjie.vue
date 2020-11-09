@@ -12,7 +12,8 @@
         <div class="logo"></div>
         <div class="logo2"></div>
         <div class="fonts">
-            ACAT计算机应用技术协会是一个由老师创办 ，学生自主维护的实验室平台。其为学生提供了一个学习交流的活动平台，提高学生对计算机应用开发技术的兴趣。更好的为学生参与科技竞赛、科研训练和开放实验等实践活动创造有利条件。
+            ACAT计算机应用技术协会是一个由老师创办
+            ，学生自主维护的实验室平台。其为学生提供了一个学习交流的活动平台，提高学生对计算机应用开发技术的兴趣。更好的为学生参与科技竞赛、科研训练和开放实验等实践活动创造有利条件。
         </div>
     </div>
 </template>
@@ -92,7 +93,7 @@ export default {
     margin-left: 7vw;
     margin-top: 5vw;
     background-color: rgb(95, 177, 159);
-    transition:1s ease-in-out ;
+    transition: 1s ease-in-out;
 }
 .border2,
 .border4 {

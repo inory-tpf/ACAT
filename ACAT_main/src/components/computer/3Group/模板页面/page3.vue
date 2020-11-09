@@ -1,11 +1,17 @@
 <template>
     <div class="main">
         <div class="fonts">
-            <div class="bigfonts">{{ msg.title1 }}的发展前景</div>
-            <div class="smallfonts" v-html="msg.font3"></div>
+            <div class="bigfonts" :class="{ active1: animation }">
+                {{ msg.title1 }}的发展前景
+            </div>
+            <div
+                class="smallfonts"
+                v-html="msg.font3"
+                :class="{ active2: animation }"
+            ></div>
         </div>
         <!-- <div class="join">Join Us</div> -->
-        <div class="loop">
+        <div class="loop" :class="{ active3: animation }">
             <div class="pic1"><img :src="msg.pic3_1" /></div>
             <div class="pic1"><img :src="msg.pic3_2" /></div>
         </div>
@@ -13,11 +19,28 @@
 </template>
 
 <script>
+import store from "@/vuex/store";
+import { mapState } from "vuex";
 export default {
     data() {
-        return {};
+        return {
+            animation: false,
+        };
     },
     props: ["msg"],
+    store,
+    computed: {
+        ...mapState(["page"]),
+    },
+    watch: {
+        page() {
+            if (this.page == 3) {
+                this.animation = true;
+            } else {
+                this.animation = false;
+            }
+        },
+    },
 };
 </script>
 
@@ -42,6 +65,9 @@ export default {
     font-size: 2vw;
     font-weight: 600;
     letter-spacing: 0.2vw;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    margin-left: -2vw;
 }
 .smallfonts {
     width: 100%;
@@ -49,6 +75,8 @@ export default {
     text-align: left;
     line-height: 2.3vw;
     letter-spacing: 0.17vw;
+    opacity: 0;
+    transition: 0.5s 0.2s ease-in-out;
 }
 .join {
     position: absolute;
@@ -67,20 +95,28 @@ export default {
     position: relative;
     width: 40vw;
     height: 90vh;
-    /* transform: rotateZ(-25deg); */
-    margin-left: 60vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
-    margin-top: 10vh;
+    margin-top: 5vw;
     padding: 0;
+    opacity: 0;
+    transition: 0.5s 0.4s ease-in-out;
+    margin-left: 80vw;
 }
 img {
     width: auto;
-    height: 100%
+    height: 100%;
 }
-.pic1{
+.pic1 {
     position: relative;
     width: 100%;
-    height: 50%
-    
+    height: 50%;
+}
+.active1,
+.active2,
+.active3 {
+    opacity: 1;
+}
+.active3 {
+    margin-left: 60vw;
 }
 </style>

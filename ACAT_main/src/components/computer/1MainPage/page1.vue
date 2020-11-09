@@ -2,7 +2,6 @@
     <div class="main">
         <show></show>
         <Nav v-show="nav"></Nav>
-        <!-- <animation1></animation1> -->
         <div class="pic" ref="scroll"></div>
         <div class="part1">
             <Mynav></Mynav>
@@ -32,44 +31,43 @@ import Picwall from "@/components/computer/1MainPage/picwall";
 import Acatmap from "@/components/computer/1MainPage/map";
 import group from "@/components/computer/1MainPage/group";
 import jianjie from "./jianjie";
-import show from "./show"
-import Nav from "../public/nav_2"
+import show from "./show";
+import Nav from "../public/nav_2";
 export default {
     name: "page",
     data() {
         return {
-            nav : false
+            nav: false,
         };
     },
     methods: {
-        picscroll:function() {
+        picscroll: function () {
             this.$refs.scroll.style.marginTop =
                 -window.pageYOffset * 0.1 + "px";
         },
-        scroll:function() {
+        scroll: function () {
             this.picscroll();
             let vw = document.body.clientWidth / 100;
             let percent = window.pageYOffset / vw;
-            if(percent >= 30){
-                this.nav = true
-            }
-            else{
-                this.nav = false
+            if (percent >= 30) {
+                this.nav = true;
+            } else {
+                this.nav = false;
             }
             if (percent >= 30 && percent <= 70) {
                 this.$refs.animation1.show();
-            }else{
-                this.$refs.animation1.hide()
+            } else {
+                this.$refs.animation1.hide();
             }
-            if(percent >= 60 && percent <=100){
-                this.$refs.animation2.show()
-            }else{
-                this.$refs.animation2.hide()
+            if (percent >= 60 && percent <= 100) {
+                this.$refs.animation2.show();
+            } else {
+                this.$refs.animation2.hide();
             }
-              if(percent >= 190 && percent <=250){
-                this.$refs.animation3.show()
-            }else{
-                this.$refs.animation3.hide()
+            if (percent >= 190 && percent <= 250) {
+                this.$refs.animation3.show();
+            } else {
+                this.$refs.animation3.hide();
             }
         },
     },
@@ -81,20 +79,18 @@ export default {
         group,
         jianjie,
         show,
-        Nav
+        Nav,
     },
     mounted() {
         document.addEventListener("scroll", this.scroll, true);
     },
     beforeRouteLeave(to, from, next) {
-        // ...
         document.removeEventListener("scroll", this.scroll, true);
         next();
     },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main {
     float: left;

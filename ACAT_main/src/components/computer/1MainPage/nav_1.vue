@@ -19,8 +19,8 @@
 </template>
 <script>
 import loop from "./loop";
-import store from "../../../vuex/store"
-import {mapState} from "vuex"
+import store from "../../../vuex/store";
+import { mapState } from "vuex";
 export default {
     name: "nav_1",
     data() {
@@ -32,22 +32,26 @@ export default {
     methods: {
         tp(num) {
             if (num === 1) {
+                //跳转至了解我们
                 this.$router.replace("/history");
             }
             if (num === 2) {
+                //跳转至组别介绍
                 this.$router.replace("/group");
             }
             if (num === 3) {
+                window.open(this.blogLocation);
                 //跳转至博客
             }
             if (num === 4) {
+                window.open(this.joinUsLocation);
                 //跳转至纳新界面
             }
         },
     },
     store,
     computed: {
-        ...mapState(['blog' , 'joinUs'])
+        ...mapState(["blog", "joinUs","blogLocation","joinUsLocation"]),
     },
 };
 </script>

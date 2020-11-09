@@ -71,9 +71,6 @@ export default {
                 this.animation = true;
                 console.log(this.animation);
             }
-            // else{
-            //     this.animation = false
-            // }
         },
     },
 };
@@ -116,10 +113,7 @@ img {
     box-sizing: border-box;
     overflow: hidden;
 }
-/* .entryEnvPic:hover img {
-  width: 120%;
-  height: 120%;
-} */
+
 .entryEnvWord {
     width: 100%;
     height: 30%;
@@ -159,10 +153,7 @@ img {
     border: 3px solid #464c58;
     overflow: hidden;
 }
-/* .detailEnvPic:hover img {
-  width: 120%;
-  height: 120%;
-} */
+
 .detailEnvWord {
     width: 100%;
     height: 30%;

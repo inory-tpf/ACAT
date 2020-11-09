@@ -96,12 +96,13 @@ export default {
             if (value == 4) {
                 this.groupChange("open");
             }
+            this.stateChange(value);
         },
         changenowpage(value) {
             this.nowpage = this.pages[value - 1];
             this.msg.value = value;
         },
-        ...mapMutations(["groupChange"]),
+        ...mapMutations(["groupChange", "stateChange"]),
     },
     store,
 };

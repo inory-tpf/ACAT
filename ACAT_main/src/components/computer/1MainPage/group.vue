@@ -16,7 +16,7 @@
                         @click="toLink(0)"
                         class="classifyJ"
                         ref="li1"
-                        :class="{active:id==0}"
+                        :class="{ active: id == 0 }"
                     >
                         <img :src="classifyList[0].classifyImg" />
                         <div class="classifyWord">
@@ -29,7 +29,7 @@
                         @click="toLink(1)"
                         class="classifyJ color2"
                         ref="li2"
-                        :class="{active:id==1}"
+                        :class="{ active: id == 1 }"
                     >
                         <img :src="classifyList[1].classifyImg" />
                         <div class="classifyWord">
@@ -42,7 +42,7 @@
                         @click="toLink(2)"
                         class="classifyJ color3"
                         ref="li3"
-                        :class="{active:id==2}"
+                        :class="{ active: id == 2 }"
                     >
                         <img :src="classifyList[2].classifyImg" />
                         <div class="classifyWord">
@@ -55,7 +55,7 @@
                         @click="toLink(3)"
                         class="classifyJ color4"
                         ref="li4"
-                        :class="{active:id==3}"
+                        :class="{ active: id == 3 }"
                     >
                         <img :src="classifyList[3].classifyImg" />
                         <div class="classifyWord">
@@ -104,7 +104,7 @@ export default {
                 `前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，现代网页更加美观，交互效果显著，功能更加强大。对于前端未来的发展，其可被定义为"人机交互界面"，那就包括随身设备端，语音交互端还有其他机器人智能终端。`,
                 "后台(java+golang)，指网站后台，有时也称为网站管理后台，是指用于管理网站前台的一系列操作，如：产品、企业信息的增加、更新、删除等.如果要编写网站后台，比较流行的语言有Java、golang,PHP等等,单纯而言语言各自有各自的优势，针对性不同。后台完成的作品可以称之为网络应用程序，它们可以实现一定的应用功能，也就是说后台人员的工作是编程。",
                 "机器学习,是一门人工智能的科学,该领域的主要研究对象是人工智能，特别是如何在经验学习中改善具体算法的性能.机器学习是对能通过经验自动改进的计算机算法的研究.机器学习是用数据或以往的经验,以此优化计算机程序的性能标准.机器学习是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。",
-                "服务端,它是为客户端服务的，服务的内容诸如向客户端提供资源，保存客户端数据。服务端可以采用VC++ 或者delphi进行编写，采用socket接口 发送数据到服务器，服务器返回数据 如果OK的话就直接跳转到主界面！服务端是一种有针对性的服务程序。它的主要表现形式以“windows窗口程序”与“控制台”为主。",
+                "服务端开发组致力于Linux下的应用软件开发，服务器端的配置等，与后台开发组相比，我们直接与TCP/IP打交道，关注‘socket‘与‘socket’之间的I/O，同时负责将后台开发组的代码上线..（可以说是半个运维了..",
             ],
             introducePicList: [
                 require("../../../assets/img/组别/简介/前端.jpg"),
@@ -198,7 +198,7 @@ export default {
     margin-top: 2vw;
     margin-left: 2vw;
     box-shadow: 0 0 15px rgb(70, 70, 70);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .color2 {
     background-color: #ce916a;
@@ -288,7 +288,7 @@ export default {
     transition: 1s ease-in-out;
     right: 0;
 }
-.active{
-  margin-top: 0vw;
+.active {
+    margin-top: 0vw;
 }
 </style>

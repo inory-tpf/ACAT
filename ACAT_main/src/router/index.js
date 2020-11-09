@@ -5,17 +5,16 @@ import index2 from './computer'
 
 Vue.use(Router)
 
-var res = window.innerWidth  
+var res = window.innerWidth
 var routes = []
-if(res < 786){
+if (res < 786) {
   routes = index1
-}else{
+} else {
   routes = index2
 }
-  
+
 
 
 export default new Router({
-  mode:'history',
   routes
 })

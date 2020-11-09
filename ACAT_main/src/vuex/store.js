@@ -6,14 +6,18 @@ Vue.use(Vuex);
 const state = {
     //纳新qq群号与微信公众号
     QQ_number: 184141080,
-    WX_name:'ACAT实验室',
-    WX:true,
+    WX_name: 'ACAT实验室',
+    WX: true,
 
-    //管理博客接口的开关 false为隐藏
-    blog: true,
+    //博客接口的开关 false为隐藏
+    blog: false,
+    //博客的网址 填入格式类似  https://www.baidu.com/
+    blogLocation: "",
 
-    //管理加入我们接口的开关 false为隐藏
+    //加入我们接口的开关 false为隐藏 
     joinUs: true,
+    //加入我么的网址 填入格式类似  https://www.baidu.com/
+    joinUsLocation: "",
 
     //组别介绍的图片与文字
     msg: {
@@ -127,8 +131,14 @@ const state = {
     //组别介绍中判断后台组选择界面
     groupState: 'true',
 
+    //一些跨组件的动画开关
+    animation1: false,
+    animation2: false,
+    animation3: false,
+    animation4: false,
 
-
+    //组别页面位置
+    page: 0,
 }
 
 //此处为方法
@@ -148,6 +158,17 @@ const mutations = {
             state.groupState = "true"
         }
     },
+
+
+    //组别动画状态修改
+    stateChange(state, value) {
+        value--
+        state['animation' + value] = 'true'
+    },
+    pageChange(state, value) {
+        state.page = value
+    }
+
 
 }
 

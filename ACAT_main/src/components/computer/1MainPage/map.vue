@@ -12,38 +12,35 @@
                 <div class="logo2"></div>
                 <div class="name">计算机应用技术协会</div>
                 <div class="place">地点：西区图书馆一楼</div>
-                <div class="fonts">纳新群号(QQ)：{{QQ_number}}</div>
-                <div class="fonts" v-if="WX">微信公众号：{{WX_name}}</div>
+                <div class="fonts">纳新群号(QQ)：{{ QQ_number }}</div>
+                <div class="fonts" v-if="WX">微信公众号：{{ WX_name }}</div>
                 <div class="qq_erwei"></div>
-                <div class="wx_erwei"></div>
+                <!-- <div class="wx_erwei"></div> -->
             </div>
         </div>
     </div>
 </template>
 <script>
-import store from "../../../vuex/store"
-import {mapState} from "vuex"
+import store from "../../../vuex/store";
+import { mapState } from "vuex";
 export default {
     data() {
-        return {
-            
-        }
+        return {};
     },
-    methods:{
-        show(){
-            this.$refs.back.style.marginLeft = "55%"
-            this.$refs.msg.style.opacity= "1"
+    methods: {
+        show() {
+            this.$refs.back.style.marginLeft = "55%";
+            this.$refs.msg.style.opacity = "1";
         },
-        hide(){
-            this.$refs.back.style.marginLeft = "100%"
-            this.$refs.msg.style.opacity= "0"
-
+        hide() {
+            this.$refs.back.style.marginLeft = "100%";
+            this.$refs.msg.style.opacity = "0";
         },
     },
     computed: {
-        ...mapState(['QQ_number' , 'WX_name' , 'WX'])
+        ...mapState(["QQ_number", "WX_name", "WX"]),
     },
-    store
+    store,
 };
 </script>
 <style scoped>
@@ -102,16 +99,16 @@ export default {
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: 1s  ease-in-out;
 }
-.logo{
+.logo {
     width: 10vw;
     height: 10vw;
     background-image: url("../../../assets/img/logo/catw.png");
     background-size: 100% 100%;
     margin-left: 4vw;
 }
-.logo2{
+.logo2 {
     width: 10vw;
     height: 4vw;
     background-image: url("../../../assets/img/logo/acatw.png");
@@ -119,7 +116,9 @@ export default {
     margin-left: 4vw;
     background-repeat: no-repeat;
 }
-.name,.place,.fonts{
+.name,
+.place,
+.fonts {
     width: 100%;
     height: 2vw;
     color: #fff;
@@ -127,23 +126,19 @@ export default {
     margin-left: 3vw;
     font-size: 1.3vw;
 }
-.place{
+.place {
     margin-left: 1.5vw;
     margin-top: 3vw;
 }
-.fonts{
+.fonts {
     margin-left: 1.5vw;
-
 }
-.qq_erwei,.wx_erwei{
-    float: left;
+.qq_erwei {
     width: 8vw;
     height: 10vw;
     background-image: url("../../../assets/img/联系我们/qq纳新二维码.jpg");
     background-size: 100% auto;
     margin-top: 2vw;
-}
-.wx_erwei{
-    margin-left: 1vw;
+    margin-left: 5vw;
 }
 </style>

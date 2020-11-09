@@ -26,8 +26,8 @@ import nav_2 from "../public/nav_2";
 import lineNav from "./lineNav";
 import muban from "./template";
 import why from "./why";
-import store from "../../../vuex/store"
-import {mapState} from "vuex"
+import store from "../../../vuex/store";
+import { mapState } from "vuex";
 export default {
     data() {
         return {
@@ -78,7 +78,14 @@ export default {
     },
     store,
     computed: {
-        ...mapState(['msg'])
+        ...mapState(["msg"]),
+    },
+    created() {
+        setTimeout(() => {
+            if (document.getElementById("Loading")) {
+                document.body.removeChild(document.getElementById("Loading")); // 加载页面完后移除加载动画
+            }
+        }, 500);
     },
 };
 </script>

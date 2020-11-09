@@ -1,16 +1,18 @@
 <template>
     <div class="main">
-        <div class="bigfonts">实验室为什么要分组</div>
-        <div class="fonts">
-            这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里是文字这里
+        <div class="bigfonts" :class="{ active1: animation }">
+            实验室为什么要分组
         </div>
-        <div class="groups">
+        <div class="fonts" :class="{ active2: animation }">
+            计算机应用技术协会(ACAT)自从建立以来,经过了多年的进步演变,逐渐形成了如今的模式。主要分为了四个组别:前端,后台(JAVA+GO),机器学习,服务端。四个组别分工明确,互相配合。无论哪个方向,都是实验室的重点方向,非常重要,缺一不可,共同构成了ACAT这个大家庭。
+        </div>
+        <div class="groups" :class="{ active3: animation }">
             <div class="qd" @click="jump(1)" ref="id1">前端</div>
             <div class="fwd" @click="jump(2)" ref="id2">服务端</div>
             <div class="ht" @click="jump(3)" ref="id3">后台</div>
             <div class="jqxx" @click="jump(4)" ref="id4">机器学习</div>
         </div>
-        <ul class="lang">
+        <ul class="lang" :class="{ active1: animation }">
             <li class="lang-1"></li>
             <li class="lang-2"></li>
             <li class="lang-3"></li>
@@ -19,23 +21,31 @@
 </template>
 
 <script>
-import store from "@/vuex/store"
-import {mapMutations} from "vuex"
+import store from "@/vuex/store";
+import { mapMutations } from "vuex";
 export default {
     data() {
-        return {};
+        return {
+            animation: false,
+        };
     },
     methods: {
         jump(value) {
             this.$emit("pagevalue", value + 1);
-            if(value == 3){
-                this.groupChange('open')
+            if (value == 3) {
+                this.groupChange("open");
             }
+            value++;
+            this.stateChange(value);
         },
-        ...mapMutations(['groupChange'])
+        ...mapMutations(["groupChange", "stateChange"]),
     },
     store,
-
+    mounted() {
+        setTimeout(() => {
+            this.animation = true;
+        }, 200);
+    },
 };
 </script>
 
@@ -52,6 +62,8 @@ export default {
     margin-top: 27vh;
     margin-left: 7vw;
     font-weight: 600;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 .fonts {
     float: left;
@@ -65,12 +77,18 @@ export default {
     line-height: 2.8vw;
     letter-spacing: 0.1vw;
     text-align: left;
+    opacity: 0;
+    transition: 0.5s 0.5s ease-in-out;
 }
 .groups {
-    float: left;
+    position: absolute;
     width: 42%;
     height: 100%;
     font-size: 1.55vw;
+    right: 0;
+    bottom: -35vw;
+    opacity: 0;
+    transition: 1s 0.8s ease-in-out;
 }
 .qd,
 .fwd,
@@ -140,6 +158,8 @@ export default {
     padding: 0;
     margin: 0;
     z-index: 999;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
 }
 .lang-1,
 .lang-2,
@@ -194,5 +214,13 @@ export default {
     100% {
         margin-left: -16vw;
     }
+}
+.active1,
+.active2,
+.active3 {
+    opacity: 1;
+}
+.active3 {
+    bottom: 0;
 }
 </style>

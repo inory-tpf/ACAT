@@ -1,7 +1,9 @@
 <template>
     <div class="main">
         <ul class="pages">
-            <li class="page1" ref="p1"></li>
+            <li class="page1" ref="p1">
+                <img src="../../../assets/img/轮播/pic.jpg" @load="finish" />
+            </li>
         </ul>
     </div>
 </template>
@@ -11,6 +13,13 @@ export default {
         return {
             time: 2000,
         };
+    },
+    methods: {
+        finish() {
+            if (document.getElementById("Loading")) {
+                document.body.removeChild(document.getElementById("Loading")); // 加载页面完后移除加载动画
+            }
+        },
     },
 };
 </script>
@@ -37,10 +46,12 @@ export default {
     float: left;
     width: 100%;
     height: 100%;
-    background-size: 100% auto;
     animation: page 50s ease-in-out infinite;
-    background-image: url("../../../assets/img/轮播/pic.jpg");
     z-index: 300;
+}
+img {
+    width: 100%;
+    background-size: 100% auto;
 }
 @keyframes page {
     0% {

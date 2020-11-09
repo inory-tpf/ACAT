@@ -20,6 +20,8 @@ import page2 from "./模板页面/page2";
 import page3 from "./模板页面/page3";
 import lists from "./lists_h";
 import mengban from "./choseBlock";
+import store from "@/vuex/store";
+import { mapMutations } from "vuex";
 export default {
     name: "qd",
     data() {
@@ -42,21 +44,25 @@ export default {
         changepage() {
             this.$refs.example.$fullpage.moveTo(0);
             this.$refs.list.change();
+            this.pageChange(0);
         },
         move(value) {
             this.$refs.example.$fullpage.moveTo(value);
             this.page = value;
+            this.pageChange(value);
         },
         switch(value) {
-            this.msg2 = ''
+            this.msg2 = "";
             this.msg2 = this.msg[value];
-            this.opts.page = 0
-            this.changepage()
+            this.opts.page = 0;
+            this.changepage();
         },
+        ...mapMutations(["pageChange"]),
     },
     watch: {
-        "opts.page"() {
+        "opts.page"(value) {
             this.page = this.opts.page;
+            this.pageChange(value);
         },
     },
     components: {

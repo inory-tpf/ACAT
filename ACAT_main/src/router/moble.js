@@ -6,20 +6,19 @@ export default [
   {
     path: '/',
     name: 'home',
-    component: Home,
+    component: () => import('../components/mobile/home.vue'),
     redirect: '/swiper',
     children: [
       {
         path: '/swiper',
         name: 'swiper',
-        component: Swiper
+        component: () => import('../components/mobile/swiper.vue'),
       },
       {
         path: '/know',
         name: 'know',
-        component: Know
+        component: () => import('../components/mobile/know.vue'),
       }
     ]
   }
 ]
-

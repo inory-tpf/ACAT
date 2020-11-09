@@ -1,26 +1,35 @@
 <template>
     <div class="main">
         <div class="fonts">
-            <div class="bigfonts1">{{ msg.title1 }}</div>
-            <div class="bigfonts2">{{ msg.title2 }}</div>
+            <div class="bigfonts1" :class="{ active1: animation1 }">
+                {{ msg.title1 }}
+            </div>
+            <div class="bigfonts2" :class="{ active2: animation1 }">
+                {{ msg.title2 }}
+            </div>
         </div>
-        <div class="back"></div>
-        
+        <div class="back" :class="{ active3: animation1 }"></div>
         <div class="back2"></div>
-        <remin></remin>
+        <remin :class="{ active4: animation1 }"></remin>
     </div>
 </template>
 
 <script>
-import remin from "../../public/remin"
+import store from "../../../../vuex/store";
+import { mapState } from "vuex";
+import remin from "../../public/remin";
 export default {
     data() {
         return {};
     },
     props: ["msg"],
-    components:{
-        remin
-    }
+    components: {
+        remin,
+    },
+    store,
+    computed: {
+        ...mapState(["animation1"]),
+    },
 };
 </script>
 
@@ -32,7 +41,7 @@ export default {
     background-size: 100 auto;
     overflow: hidden;
 }
-.back{
+.back {
     position: absolute;
     width: 40vw;
     height: 33vw;
@@ -40,15 +49,17 @@ export default {
     background-size: 100% auto;
     background-repeat: no-repeat;
     right: 5vw;
-    bottom: 3vw;
+    bottom: 8vh;
     z-index: 99;
+    opacity: 0;
+    transition: 1s 1.5s ease-in-out;
 }
-.back2{
+.back2 {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
-    opacity: .05;
+    opacity: 0.05;
     z-index: 999;
 }
 .fonts {
@@ -56,7 +67,7 @@ export default {
     width: 60vw;
     height: 20vw;
     margin-left: 8vw;
-    margin-top: 15vw;
+    margin-top: 19vw;
     z-index: 99;
     font-size: 3vw;
     color: rgb(70, 76, 88);
@@ -66,9 +77,26 @@ export default {
 }
 .bigfonts1 {
     font-size: 4vw;
+    margin-left: -3vw;
+    transition: 1s 1s ease-in-out;
+    opacity: 0;
 }
 .bigfonts2 {
     margin-top: 1vw;
+    transition: 1s 1.2s ease-in-out;
+    opacity: 0;
+    margin-left: 5vw;
+}
+.active1,
+.active2,
+.active3 {
+    opacity: 1;
+    margin-left: 0;
+}
+.active2 {
     margin-left: 2vw;
+}
+.active4 {
+    bottom: 0vw;
 }
 </style>

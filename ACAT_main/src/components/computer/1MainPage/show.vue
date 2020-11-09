@@ -3,7 +3,8 @@
         <div class="back"></div>
         <div class="picplace" @mousewheel.prevent="rollImg">
             <div ref="imgDiv" class="pic">
-            <img @mousedown="move" :src="piclist[this.value - 1]" /></div>
+                <img @mousedown="move" :src="piclist[this.value - 1]" />
+            </div>
         </div>
         <div class="close" @click="close"></div>
     </div>
@@ -112,9 +113,8 @@ export default {
     -webkit-transform: translate(-50%, -50%);
     overflow: hidden;
 }
-.pic{
+.pic {
     position: relative;
-
 }
 img {
     max-width: 923px;

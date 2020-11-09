@@ -36,6 +36,6 @@ export default {
     z-index: 99;
     transition: 1s ease-in-out;
     opacity: 0;
-    opacity: .9;
+    opacity: 0.9;
 }
 </style>

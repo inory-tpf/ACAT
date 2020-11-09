@@ -136,7 +136,7 @@
             </div>
         </div>
         <div class="return-btn-wrapper">
-                  <a class="return-btn" href="/swiper">
+                  <a class="return-btn" @click="jump">
                         
                 <p class="return-btn-text">返回</p>
                         
@@ -173,6 +173,10 @@ export default {
         executeAnimation() {
             this.parallaxImg();
         },
+
+        jump(){
+            this.$router.replace("/swiper");
+        }
     },
     mounted() {
         window.addEventListener("scroll", this.executeAnimation, true);
@@ -188,41 +192,41 @@ export default {
     text-indent: 2em;
     padding: 0vh 2vw;
 }
-.return-btn-wrapper{
+.return-btn-wrapper {
     width: 20vw;
     height: 22vw;
     line-height: 22vw;
     font-size: 3vw;
     font-weight: 600;
-    background-image:url("../../assets/mobile/pic.png");
+    background-image: url("../../assets/mobile/pic.png");
     background-size: 20vw 22vw;
     position: fixed;
     bottom: 3vh;
     right: 5vw;
     z-index: 1;
 }
-.return-btn{
+.return-btn {
     display: block;
     width: 100%;
     height: 100%;
     color: #000;
 }
-.return-btn-text{
+.return-btn-text {
     width: 20vw;
     position: absolute;
     top: 2vw;
     left: -1vw;
     height: 5vw;
 }
-.return-btn-text:nth-child(2){
+.return-btn-text:nth-child(2) {
     top: 6vw;
     left: -1vw;
 }
-.cat-title-wrapper{
+.cat-title-wrapper {
     height: 35vw;
     position: relative;
 }
-.cat-title-text{
+.cat-title-text {
     width: 40vw;
     height: 15vw;
     background-color: rgb(70, 76, 88);
@@ -237,12 +241,12 @@ export default {
     top: 5vw;
     transform: translate(-50%, 5vw);
 }
-.teacher-item{
+.teacher-item {
     height: 40vw;
     position: relative;
     padding: 2vh;
 }
-.teacher-pic{
+.teacher-pic {
     height: 40vw;
     width: 40vw;
     overflow: hidden;
@@ -251,7 +255,7 @@ export default {
     right: 5vw;
     top: 0;
 }
-.teacher-pic-even{
+.teacher-pic-even {
     height: 40vw;
     width: 40vw;
     overflow: hidden;

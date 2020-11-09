@@ -30,8 +30,8 @@
     </div>
 </template>
 <script>
-import store from "@/vuex/store"
-import {mapState} from "vuex"
+import store from "@/vuex/store";
+import { mapState } from "vuex";
 export default {
     data() {
         return {};
@@ -55,12 +55,12 @@ export default {
                     ";background-color:transparent;";
             }
         },
-        show(value){
-            this.$store.commit('change',[value,'true'])
-        }
+        show(value) {
+            this.$store.commit("change", [value, "true"]);
+        },
     },
-    computed:mapState(['value']),
-    store
+    computed: mapState(["value"]),
+    store,
 };
 </script>
 <style scoped>
