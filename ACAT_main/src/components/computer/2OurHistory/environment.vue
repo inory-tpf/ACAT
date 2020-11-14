@@ -69,7 +69,6 @@ export default {
         page: function (value) {
             if (value == 2) {
                 this.animation = true;
-                console.log(this.animation);
             }
         },
     },
@@ -98,7 +97,7 @@ img {
 }
 .entryEnv {
     position: absolute;
-    top: 6vw;
+    top: 5vw;
     left: 10%;
     width: 37%;
     height: 40vw;
@@ -135,15 +134,15 @@ img {
     transition: 0.5s 0.4s ease-in-out;
 }
 .book {
-    top: 6vw;
+    top: 5vw;
     left: 50%;
 }
 .wifi {
-    top: 6vw;
+    top: 5vw;
     left: 75%;
 }
 .table {
-    top: 26vw;
+    top: 24vw;
     left: 50%;
 }
 .detailEnvPic {
@@ -166,7 +165,7 @@ img {
 }
 .introduceEnv {
     position: absolute;
-    top: 24vw;
+    top: 22vw;
     left: 75%;
     width: 20%;
     height: 30vw;

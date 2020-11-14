@@ -199,14 +199,14 @@
                             <div class="code-img-wrapper">
                                 <img
                                     src="../../assets/img/联系我们/qq纳新二维码.jpg"
-                                    width="40%"
+                                    width="35%"
                                     height="auto"
                                 />
-                                <img
+                                <!-- <img
                                     src="../../assets/mobile/20201010222206.jpg"
                                     width="40%"
                                     height="auto"
-                                />
+                                /> -->
                             </div>
                         </div>
                     </swiper-slide>

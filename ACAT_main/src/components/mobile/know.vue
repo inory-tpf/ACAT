@@ -48,7 +48,7 @@
             <div class="teacher-item">
                 <div class="teacher-pic">
                     <img
-                        src="../../assets/mobile/92c1b3f4d530da14a86669f855bccd6.png"
+                        src="../../assets/mobile/余俊.png"
                         alt="加载中..."
                         width="100%"
                         height="100%"

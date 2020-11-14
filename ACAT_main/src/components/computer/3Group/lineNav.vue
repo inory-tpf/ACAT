@@ -52,7 +52,7 @@ import { mapMutations, mapState } from "vuex";
 export default {
     data() {
         return {
-            line: true,
+            line: false,
             pages: [
                 "-首页-",
                 "-前端组-",
@@ -74,7 +74,7 @@ export default {
                 this.$refs.line2.style.transform = "rotateZ(-45deg)";
                 this.$refs.line3.style.transform = "rotateZ(45deg)";
                 this.$refs.lists.style.cssText +=
-                    ";display:block;opacity: 1;margin-top: .3vw;";
+                    ";display:block;opacity: 1;margin-top: -1vw;";
                 return (this.line = false);
             }
             this.$refs.line1.style.transform = "rotateZ(0deg)";
@@ -105,6 +105,11 @@ export default {
         ...mapMutations(["groupChange", "stateChange"]),
     },
     store,
+    mounted(){
+        setTimeout(()=>{
+            this.change()
+        },1000)
+    }
 };
 </script>
 
@@ -131,14 +136,16 @@ export default {
     list-style: none;
     margin-left: 12.5%;
     transition: 0.3s ease-in-out;
-    transform: rotateZ(0deg);
+    transform: rotateZ(45deg);
     transform-origin: 20% 140%;
 }
 .line2 {
     transform-origin: 50% 50%;
+    transform: rotateZ(-45deg);
 }
 .line3 {
     transform-origin: 83% -60%;
+    transform: rotateZ(45deg);
 }
 .lists {
     position: absolute;
@@ -147,9 +154,10 @@ export default {
     background-color: rgb(60, 66, 78);
     margin-left: 1vw;
     transition: 0.6s ease-in-out;
-    opacity: 0;
-    margin-top: -30vw;
     padding: 0;
+    display: block;
+    opacity: 1;
+    margin-top: -1vw;
 }
 .listFont {
     width: 7vw;

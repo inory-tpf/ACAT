@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './computer'
 import router from './router'
 import moble from './moble'
-
+import 'babel-polyfill'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 

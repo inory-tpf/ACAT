@@ -59,18 +59,18 @@ export default {
     height: 5vw;
     color: rgb(86, 158, 142);
     font-size: 2vw;
-    margin-top: 27vh;
-    margin-left: 7vw;
+    margin-top: 29vh;
+    margin-left: 10vw;
     font-weight: 600;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s .5s ease-in-out;
 }
 .fonts {
     float: left;
     width: 50%;
     height: 30vw;
     margin-top: 40vh;
-    margin-left: 8%;
+    margin-left: 10%;
     font-size: 1.75vw;
     color: rgb(70, 76, 88);
     text-indent: 3vw;
@@ -78,7 +78,7 @@ export default {
     letter-spacing: 0.1vw;
     text-align: left;
     opacity: 0;
-    transition: 0.5s 0.5s ease-in-out;
+    transition: 0.5s 1s ease-in-out;
 }
 .groups {
     position: absolute;
@@ -88,7 +88,7 @@ export default {
     right: 0;
     bottom: -35vw;
     opacity: 0;
-    transition: 1s 0.8s ease-in-out;
+    transition: 1s 1.3s ease-in-out;
 }
 .qd,
 .fwd,

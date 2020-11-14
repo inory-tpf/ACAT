@@ -10,14 +10,14 @@ const state = {
     WX: true,
 
     //博客接口的开关 false为隐藏
-    blog: false,
+    blog: true,
     //博客的网址 填入格式类似  https://www.baidu.com/
-    blogLocation: "",
+    blogLocation: "http://acat.xupt.edu.cn:8080/",
 
     //加入我们接口的开关 false为隐藏 
     joinUs: true,
     //加入我么的网址 填入格式类似  https://www.baidu.com/
-    joinUsLocation: "",
+    joinUsLocation: "http://acat.xupt.edu.cn:7200/",
 
     //组别介绍的图片与文字
     msg: {

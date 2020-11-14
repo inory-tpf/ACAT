@@ -119,7 +119,7 @@ export default {
 .block {
     position: absolute;
     width: 30vw;
-    height: 41vw;
+    height: 38vw;
     background-color: rgb(70, 76, 88);
     margin-top: 0vw;
     overflow: hidden;
@@ -152,10 +152,10 @@ export default {
     width: 80%;
     margin-top: 53%;
     margin-left: 6%;
-    font-size: 1.55vw;
+    font-size: 1.4vw;
     color: rgb(255, 255, 255);
     text-indent: 3vw;
-    line-height: 2.5vw;
+    line-height: 2.3vw;
     letter-spacing: 0.15vw;
     text-align: left;
     background-color: rgb(75, 81, 93);
